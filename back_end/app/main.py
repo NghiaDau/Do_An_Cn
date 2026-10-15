@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import health
+from app.routers import health, jobs
 
 app = FastAPI(title="DACN API", version="0.1.0")
 
@@ -13,6 +13,7 @@ app.add_middleware(
 )
 
 app.include_router(health.router)
+app.include_router(jobs.router)
 
 
 @app.get("/")

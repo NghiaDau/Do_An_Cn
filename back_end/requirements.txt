@@ -1,3 +1,7 @@
 fastapi
 uvicorn[standard]
 pydantic-settings
+pandas
+sentence-transformers
+chromadb
+tqdm
