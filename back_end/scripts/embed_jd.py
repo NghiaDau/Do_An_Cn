@@ -10,30 +10,51 @@ import argparse
 from pathlib import Path
 
 import pandas as pd
-from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from app.core.chroma import get_collection  # noqa: E402
+from app.core.chroma import get_collection, reset_collection  # noqa: E402
+from app.core.embedding import DOC_PREFIX, load_model  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 CSV_PATH = ROOT / "data_set" / "job_descriptions" / "job_descriptions_clean.csv"
 
-MODEL_NAME = "all-MiniLM-L6-v2"
-MAX_CHARS = 2000  # model chỉ đọc ~256 token, cắt bớt cho nhanh
+
+
+ENGLISH_LEVELS = {"basic": 1, "pre": 2, "intermediate": 3, "upper": 4, "fluent": 5}
+
+
+def parse_exp_years(value):
+    """'3y' -> 3, 'no_exp' -> 0."""
+    digits = "".join(c for c in str(value) if c.isdigit())
+    return int(digits) if digits else 0
+
+
+def build_metadata(row):
+    """Trường tĩnh đính kèm vector: dạng chữ để hiển thị, dạng số để lọc theo khoảng."""
+    level = str(row["English Level"]).strip().lower()
+    return {
+        "position": str(row["Position"]),
+        "company": str(row["Company Name"]),
+        "keyword": str(row["Primary Keyword"]),
+        "exp_years": parse_exp_years(row["Exp Years"]),
+        "english_level": level,
+        "english_level_num": ENGLISH_LEVELS.get(level, 0),
+    }
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--csv", default=str(CSV_PATH))
     ap.add_argument("--limit", type=int, default=None, help="số JD tối đa cần nạp")
-    ap.add_argument("--batch", type=int, default=64)
+    ap.add_argument("--batch", type=int, default=16)
+    ap.add_argument("--reset", action="store_true", help="xóa collection cũ rồi nạp lại")
     ap.add_argument("--chunksize", type=int, default=5000, help="số dòng đọc mỗi lần")
     args = ap.parse_args()
 
-    model = SentenceTransformer(MODEL_NAME)
-    col = get_collection()
+    model = load_model()
+    col = reset_collection() if args.reset else get_collection()
 
     done = 0
     reader = pd.read_csv(args.csv, chunksize=args.chunksize)
@@ -55,21 +76,15 @@ def main():
 
         for start in tqdm(range(0, len(chunk), args.batch), desc="embed", leave=False):
             part = chunk.iloc[start:start + args.batch]
-            texts = part["Long Description"].astype(str).str.slice(0, MAX_CHARS).tolist()
-            vectors = model.encode(texts, normalize_embeddings=True).tolist()
+            texts = part["Long Description"].astype(str).tolist()
+            vectors = model.encode(
+                [DOC_PREFIX + t for t in texts], normalize_embeddings=True
+            ).tolist()
             col.add(
                 ids=part["id"].tolist(),
                 embeddings=vectors,
                 documents=texts,
-                metadatas=[
-                    {
-                        "position": str(r["Position"]),
-                        "company": str(r["Company Name"]),
-                        "exp_years": str(r["Exp Years"]),
-                        "keyword": str(r["Primary Keyword"]),
-                    }
-                    for _, r in part.iterrows()
-                ],
+                metadatas=[build_metadata(r) for _, r in part.iterrows()],
             )
         print(f"Đã nạp {done} JD, tổng trong DB: {col.count()}")
 

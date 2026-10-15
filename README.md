@@ -10,6 +10,7 @@ project_dacn/
 │   ├── app/
 │   │   ├── main.py            # app FastAPI
 │   │   ├── core/chroma.py     # cấu hình ChromaDB
+│   │   ├── core/embedding.py  # cấu hình model embedding
 │   │   └── routers/           # health.py, jobs.py
 │   ├── scripts/embed_jd.py    # đọc CSV, embed Long Description, nạp vào ChromaDB
 │   ├── chroma_db/             # dữ liệu vector (tự sinh, không đưa lên git)
@@ -49,7 +50,7 @@ Nạp nhiều hơn, hoặc toàn bộ dataset nếu bỏ `--limit`:
 ```
 
 - Có thể chạy lại, các JD đã nạp sẽ được bỏ qua.
-- Lần chạy đầu sẽ tải model `all-MiniLM-L6-v2` (~90MB).
+- Lần chạy đầu sẽ tải model `BAAI/bge-small-en-v1.5` (~130MB).
 - Dữ liệu lưu tại `back_end/chroma_db/`.
 
 ## 2. Chạy API

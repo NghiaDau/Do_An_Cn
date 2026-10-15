@@ -22,3 +22,13 @@ def get_client():
 
 def get_collection():
     return get_client().get_or_create_collection(COLLECTION, metadata={"hnsw:space": "cosine"})
+
+
+def reset_collection():
+    """Xóa hẳn collection (kể cả kích thước vector đã khóa) rồi tạo lại."""
+    client = get_client()
+    try:
+        client.delete_collection(COLLECTION)
+    except Exception:  # chưa tồn tại
+        pass
+    return client.get_or_create_collection(COLLECTION, metadata={"hnsw:space": "cosine"})
