@@ -4,6 +4,8 @@ pydantic-settings
 pandas
 sentence-transformers
 chromadb
+networkx
 tqdm
 einops
 pyarrow
+pytest

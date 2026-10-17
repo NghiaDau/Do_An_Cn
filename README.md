@@ -11,6 +11,8 @@ project_dacn/
 │   │   ├── main.py            # app FastAPI
 │   │   ├── core/chroma.py     # cấu hình ChromaDB
 │   │   ├── core/embedding.py  # cấu hình model embedding
+│   │   ├── core/taxonomy.py   # đồ thị taxonomy IT (NetworkX) + hàm Graph Matching
+│   │   ├── data/taxonomy.json # taxonomy ngành IT phân cấp (chung -> cụ thể)
 │   │   └── routers/           # health.py, jobs.py
 │   ├── scripts/make_csv.py    # đổi file parquet đã tải về thành job_descriptions.csv
 │   ├── scripts/embed_jd.py    # đọc CSV, embed Long Description, nạp vào ChromaDB
@@ -91,6 +93,48 @@ python run.py
 - `GET /jobs/{job_id}`: chi tiết một JD
 
 Model embedding được nạp khi server khởi động (trước dòng `Application startup complete`) để embed câu truy vấn của `/jobs/search`.
+
+### Taxonomy kỹ năng (Graph Matching)
+
+`app/data/taxonomy.json` mô tả phân cấp kỹ năng/vị trí IT (vd `Blockchain -> Blockchain Node -> Masternode`). `app/core/taxonomy.py` nạp file này thành đồ thị có hướng NetworkX trong RAM và cung cấp các hàm chạy độc lập (chưa gắn vào API):
+
+```python
+from app.core.taxonomy import relation, skill_match_score, match_skills, ancestors, descendants
+
+skill_match_score("Blockchain", "Masternode")   # 0.9  ứng viên cụ thể hơn yêu cầu -> đáp ứng
+skill_match_score("Masternode", "Blockchain")   # 0.25 ứng viên chỉ biết khái niệm chung -> một phần
+match_skills(["Blockchain", "Kubernetes"], ["Masternode", "Docker"])
+
+extract_terms("Senior/Lead Backend Developer (Python)")   # ['Backend', 'Python']
+```
+
+`extract_terms(text)` tách các thuật ngữ trong taxonomy ra khỏi văn bản tự do (position, description) để đưa JD và ứng viên về cùng tập nút, rồi đưa kết quả vào `match_skills`. Nó khớp theo cụm dài nhất (`Node.js` không bị tách thành `Node` + `js`), không khớp giữa từ (`JavaScript` không cho `Java`), và với khóa ngắn/dễ nhầm (`IT`, `R`, `C`, `QA`, `Spring`...) chỉ nhận khi viết đúng dạng IN HOA hoặc Viết hoa đầu. Nó chỉ nhận đúng tên hoặc alias có trong taxonomy, không suy luận nghĩa.
+
+Tên và alias không phân biệt hoa thường (`Block-chain` -> `Blockchain`). Trùng alias hoặc có vòng lặp sẽ báo lỗi khi nạp.
+
+#### Dựng lại `taxonomy.json`
+
+`taxonomy.json` được tạo bằng script, nên sửa script rồi chạy lại thay vì sửa tay file JSON (chạy sẽ **ghi đè hoàn toàn** file cũ). Từ thư mục `back_end`:
+
+```bash
+.venv/Scripts/python scripts/build_taxonomy.py
+.venv/Scripts/python scripts/build_taxonomy.py --min-count 10   # chỉ giữ thuật ngữ JD xuất hiện >= 10 lần
+```
+
+Nguồn dữ liệu:
+
+- **ESCO** (`data_set/skill_en`): các kỹ năng kiến thức (knowledge) trong `digitalSkillsCollection` nằm dưới nhóm ICT (`isced-f/06`) cùng các nhóm cha; quan hệ cha-con lấy từ `broaderRelationsSkillPillar`.
+- **JD** (`job_descriptions_20k.csv`): cây thuật ngữ IT soạn tay trong `scripts/jd_tree.py` (`JD_TREE`). Chỉ giữ thuật ngữ xuất hiện trong ít nhất `--min-count` JD, trừ các nút trong `FORCE` (chuỗi Blockchain -> Blockchain Node -> Masternode). Nút trùng tên với ESCO được gộp nên đồ thị là DAG.
+
+Thư mục `data_set/` không nằm trong git, nên cần có sẵn dữ liệu ESCO ở đó trước khi chạy script.
+
+#### Chạy test
+
+Test của taxonomy (cây phân cấp, chấm điểm, `extract_terms`) nằm ở `back_end/tests/test_taxonomy.py`. Điểm chấm được khóa bằng một taxonomy nhỏ dựng riêng trong test, nên đổi hệ số điểm (`SPECIALIZATION_DECAY`, `GENERALIZATION_DECAY`, `RELATED_BASE`) sẽ làm test lỗi cho đến khi cập nhật điểm kỳ vọng. Từ thư mục `back_end`:
+
+```bash
+.venv/Scripts/python -m pytest
+```
 
 ## 4. Xem dữ liệu trên Chroma UI (tùy chọn)
 

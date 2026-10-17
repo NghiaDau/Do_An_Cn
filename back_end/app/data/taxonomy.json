@@ -1,0 +1,3785 @@
+{
+  "name": "IT",
+  "children": [
+    {
+      "name": "Blockchain",
+      "aliases": [
+        "blockchain technology",
+        "block-chain",
+        "web3"
+      ],
+      "children": [
+        {
+          "name": "Bitcoin"
+        },
+        {
+          "name": "Blockchain Node",
+          "aliases": [
+            "blockchain nodes"
+          ],
+          "children": [
+            {
+              "name": "Masternode",
+              "aliases": [
+                "masternodes"
+              ]
+            },
+            {
+              "name": "Validator",
+              "aliases": [
+                "validators"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cryptocurrency",
+          "aliases": [
+            "crypto"
+          ]
+        },
+        {
+          "name": "DeFi"
+        },
+        {
+          "name": "Ethereum"
+        },
+        {
+          "name": "NFT"
+        },
+        {
+          "name": "Smart Contract",
+          "aliases": [
+            "smart contract software",
+            "smart contracts"
+          ],
+          "children": [
+            {
+              "name": "Solidity",
+              "aliases": [
+                "Solidity principles | Solidity techniques | Solidity software"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "children": [
+        {
+          "name": "Data Analyst",
+          "aliases": [
+            "data analysis"
+          ],
+          "children": [
+            {
+              "name": "Power BI"
+            },
+            {
+              "name": "Tableau"
+            }
+          ]
+        },
+        {
+          "name": "Data Engineer",
+          "children": [
+            {
+              "name": "Airflow"
+            },
+            {
+              "name": "ETL"
+            },
+            {
+              "name": "Hadoop",
+              "aliases": [
+                "Apache Hadoop"
+              ]
+            },
+            {
+              "name": "Kafka",
+              "aliases": [
+                "apache kafka"
+              ]
+            },
+            {
+              "name": "Spark",
+              "aliases": [
+                "apache spark"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Data Science",
+          "aliases": [
+            "data science process | science of data",
+            "data scientist"
+          ],
+          "children": [
+            {
+              "name": "Computer Vision",
+              "aliases": [
+                "OCR | cuda | matlab | tensorflow | simpleCV | openCV | keras"
+              ]
+            },
+            {
+              "name": "Machine Learning",
+              "aliases": [
+                "ML | supervised learning | machine learning models | semi-supervised learning | unsupervised learning",
+                "ml"
+              ],
+              "children": [
+                {
+                  "name": "Deep Learning",
+                  "children": [
+                    {
+                      "name": "PyTorch"
+                    },
+                    {
+                      "name": "TensorFlow"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "NLP",
+              "aliases": [
+                "natural language processing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Database",
+      "aliases": [
+        "non-relational database | types of databases | relational database",
+        "databases"
+      ],
+      "children": [
+        {
+          "name": "museum databases",
+          "aliases": [
+            "museum database | museum digital records | museum databases functionality and architecture | museum database management | museum archives | museum records"
+          ]
+        },
+        {
+          "name": "NoSQL",
+          "aliases": [
+            "Not Only SQL non-relational database | NoSQL database management system | NoSQL non-relational database | Not Only SQL database management system"
+          ],
+          "children": [
+            {
+              "name": "Cassandra"
+            },
+            {
+              "name": "Elasticsearch"
+            },
+            {
+              "name": "MongoDB"
+            },
+            {
+              "name": "Redis"
+            }
+          ]
+        },
+        {
+          "name": "SQL",
+          "aliases": [
+            "Informix 4GL/SQL | Subquery | SEQUEL"
+          ],
+          "children": [
+            {
+              "name": "MySQL",
+              "aliases": [
+                "MySQL Classic Edition | MySQL Enterprise Edition | MySQL Embedded (OEM/ISV) | MySQL Standard Edition | MySQL Cluster CGE"
+              ]
+            },
+            {
+              "name": "Oracle"
+            },
+            {
+              "name": "PostgreSQL",
+              "aliases": [
+                "Postgres",
+                "postgres"
+              ]
+            },
+            {
+              "name": "SQL Server",
+              "aliases": [
+                "MS SQL Server",
+                "mssql"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "children": [
+        {
+          "name": "Figma"
+        },
+        {
+          "name": "UI/UX",
+          "aliases": [
+            "ux design",
+            "ui design",
+            "ux",
+            "ui",
+            "ux designer",
+            "ui designer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DevOps",
+      "aliases": [
+        "DevOps development | DevOps based software development | DevOps methodology",
+        "devops engineer"
+      ],
+      "children": [
+        {
+          "name": "CI/CD",
+          "aliases": [
+            "continuous integration"
+          ],
+          "children": [
+            {
+              "name": "GitLab CI"
+            },
+            {
+              "name": "Jenkins"
+            }
+          ]
+        },
+        {
+          "name": "Cloud",
+          "aliases": [
+            "cloud computing"
+          ],
+          "children": [
+            {
+              "name": "AWS",
+              "aliases": [
+                "amazon web services"
+              ]
+            },
+            {
+              "name": "Azure",
+              "aliases": [
+                "microsoft azure"
+              ]
+            },
+            {
+              "name": "GCP",
+              "aliases": [
+                "google cloud"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Containerization",
+          "children": [
+            {
+              "name": "Docker"
+            },
+            {
+              "name": "Kubernetes",
+              "aliases": [
+                "k8s"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Infrastructure as Code",
+          "aliases": [
+            "iac"
+          ],
+          "children": [
+            {
+              "name": "Ansible",
+              "aliases": [
+                "Ansible automation tool"
+              ]
+            },
+            {
+              "name": "Terraform"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Software",
+      "children": [
+        {
+          "name": "Salesforce"
+        },
+        {
+          "name": "SAP"
+        }
+      ]
+    },
+    {
+      "name": "information and communication technologies (icts)",
+      "children": [
+        {
+          "name": "computer use",
+          "children": [
+            {
+              "name": "Adobe Illustrator",
+              "aliases": [
+                "Adobe Illustrator CC"
+              ]
+            },
+            {
+              "name": "Adobe Photoshop",
+              "aliases": [
+                "Adobe Photoshop Elements | Adobe Photoshop CC"
+              ]
+            },
+            {
+              "name": "Adobe Photoshop Lightroom",
+              "aliases": [
+                "Adobe Photoshop Lightroom for 2D Raster Graphics Generation | Adobe Photoshop Lightroom graphical ICT tool | Adobe Photoshop Lightroom for 2D Vector Graphics Creation | Adobe Photoshop Lightroom for 2D raster generation | Adobe Photoshop Lightroom for 2D vector graphics generation | Adobe Photoshop Lightroom for digital editing"
+              ]
+            },
+            {
+              "name": "attack vectors",
+              "aliases": [
+                "information security threats | cybersecurity threats | ICT security threats"
+              ]
+            },
+            {
+              "name": "audio editing software",
+              "aliases": [
+                "audio editing program | audio editing plugin | audio edit software"
+              ]
+            },
+            {
+              "name": "authoring software"
+            },
+            {
+              "name": "automatic control system",
+              "aliases": [
+                "self-controlling system | automated control system | autonomous control system | mechanised control system"
+              ]
+            },
+            {
+              "name": "blockchain applications",
+              "aliases": [
+                "blockchain functions"
+              ]
+            },
+            {
+              "name": "business ICT systems",
+              "aliases": [
+                "business IT systems"
+              ]
+            },
+            {
+              "name": "Capture One",
+              "aliases": [
+                "Capture One computer programme | Capture One software"
+              ]
+            },
+            {
+              "name": "computational fluid dynamics",
+              "aliases": [
+                "CFD | airflow analysis | cfd | behaviour of fluids in motion | analysis of airflow | behaviour of fluids"
+              ]
+            },
+            {
+              "name": "computer equipment",
+              "aliases": [
+                "computer apparatus | computer machinery | computer machines | computing equipment | computer devices"
+              ]
+            },
+            {
+              "name": "computer forensics",
+              "aliases": [
+                "forensic IT | digital forensic investigation"
+              ]
+            },
+            {
+              "name": "computer simulation",
+              "aliases": [
+                "simulation software ANSYS | computer-based simulation"
+              ]
+            },
+            {
+              "name": "core banking software",
+              "aliases": [
+                "core banking application"
+              ]
+            },
+            {
+              "name": "data engineering",
+              "aliases": [
+                "data engineering methods"
+              ]
+            },
+            {
+              "name": "decision support systems",
+              "aliases": [
+                "decision-making tools | decision support matrix | decision support software"
+              ]
+            },
+            {
+              "name": "desktop publishing",
+              "aliases": [
+                "DTP"
+              ]
+            },
+            {
+              "name": "e-commerce systems",
+              "aliases": [
+                "e-commerce system | e-commercial systems | e commerce organisation | e commerce structure | e-commerce scheme | e-commerce arrangement | e-commercial system"
+              ]
+            },
+            {
+              "name": "Eclipse (integrated development environment software)",
+              "aliases": [
+                "Eclipse | knowledge of Eclipse | Eclipse IDE"
+              ]
+            },
+            {
+              "name": "GIMP (graphics editor software)",
+              "aliases": [
+                "GIMP software | GIMP | GIMP for digital editing | GNU Image Manipulation Program | GIMP for graphics composition"
+              ]
+            },
+            {
+              "name": "graphics editor software",
+              "aliases": [
+                "Autodesk SketchBook Pro | Adobe Photoshop Elements | CinePaint | NeoPaint | Project Dogwaffle | sK1 | Apache OpenOffice Draw | RawTherapee | PixBuilder Photo Editor | cosmigo Pro Motion | OmniGraffle | PhotoScape | SVG-edit | Corel Painter Essentials | Swift 3D | UFRaw | ArtRage | GimPhoto | Picasa | ArcSoft PhotoImpression | Fatpaint | vector graphics editor | Pictor Paint | Pixlr.com | QFX | Zoner Photo Studio | GIMPshop | DigiKam | TVPaint | Paint.NET | XnView | Darktable | CodedColor | IrfanView | LightZone | Photogenics | LibreOffice Draw | Ability Photopaint | Embroidermodder | Serif Photoplus | PicMonkey | Phatch | ImageMagick | Chasys Draw IES | ACD Canvas | Inkscape | Color It! | Unified Color HDR PhotoStudio | XPaint | GrafX2 | LView Pro | Xara Xtreme LX | Erdas Imagine | Balsamiq | Macromedia FreeHand | G'MIC | Shotwell | Tux Paint | GraphicConverter | Xara Photo & Graphic Designer | Corel Photo-Paint | Sodipodi | Pixelmator | F-Spot | GraphicsMagick | SAI | Photo Mechanic | LazPaint | Ulead PhotoImpact | Pixia | Fotografix | PMview | FastStone Image Viewer | Rawstudio | KolourPaint | Serif DrawPlus | PhotoPerfect | Iridient Developer"
+              ],
+              "children": [
+                {
+                  "name": "Adobe Illustrator",
+                  "aliases": [
+                    "Adobe Illustrator CC"
+                  ]
+                },
+                {
+                  "name": "Adobe Photoshop",
+                  "aliases": [
+                    "Adobe Photoshop Elements | Adobe Photoshop CC"
+                  ]
+                },
+                {
+                  "name": "Adobe Photoshop Lightroom",
+                  "aliases": [
+                    "Adobe Photoshop Lightroom for 2D Raster Graphics Generation | Adobe Photoshop Lightroom graphical ICT tool | Adobe Photoshop Lightroom for 2D Vector Graphics Creation | Adobe Photoshop Lightroom for 2D raster generation | Adobe Photoshop Lightroom for 2D vector graphics generation | Adobe Photoshop Lightroom for digital editing"
+                  ]
+                },
+                {
+                  "name": "GIMP (graphics editor software)",
+                  "aliases": [
+                    "GIMP software | GIMP | GIMP for digital editing | GNU Image Manipulation Program | GIMP for graphics composition"
+                  ]
+                },
+                {
+                  "name": "Microsoft Visio",
+                  "aliases": [
+                    "Visio 2013 | MS Visio | Visio 2016 | Microsoft Office Visio | Office Visio 2007 | Office Visio 2003 | Visio 2010 | Visio 2000 | Visio 2002"
+                  ]
+                },
+                {
+                  "name": "SketchBook Pro",
+                  "aliases": [
+                    "Autodesk SketchBook Pro | SketchBook"
+                  ]
+                },
+                {
+                  "name": "Synfig",
+                  "aliases": [
+                    "Synfig Studio"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "human-computer interaction",
+              "aliases": [
+                "HCI"
+              ]
+            },
+            {
+              "name": "ICT accessibility standards",
+              "aliases": [
+                "digital accessibility standards | accessibility standards and guidelines | assistive technology standards"
+              ]
+            },
+            {
+              "name": "ICT environmental policies",
+              "aliases": [
+                "ICT environmental guidelines"
+              ]
+            },
+            {
+              "name": "ICT hardware specifications",
+              "aliases": [
+                "specifications for ICT hardware | ICT hardware needs | ICT hardware requirements | ICT hardware stipulations | ICT hardware characteristics | an ICT hardware specification | ICT hardware specification"
+              ]
+            },
+            {
+              "name": "ICT help platforms",
+              "aliases": [
+                "ICT help desks | ICT help desk platforms"
+              ]
+            },
+            {
+              "name": "ICT power consumption",
+              "aliases": [
+                "ICT power usage | ICT energy consumption"
+              ]
+            },
+            {
+              "name": "ICT problem management techniques",
+              "aliases": [
+                "ICT problem management procedures | ICT problem management strategies | ICT problem management procedure | ICT problem management processes | ICT problem management methods | types of ICT problem management techniques"
+              ]
+            },
+            {
+              "name": "industrial software",
+              "aliases": [
+                "software for production processes | software for manufacturing | manufacturing software | continuing professional development in industrial tools and software | scheduling software | software for engineering applications | industrial application of software | software used in industrial"
+              ]
+            },
+            {
+              "name": "Internet of Things",
+              "aliases": [
+                "Information appliances | IoT | smart devices | Pervasive systems | Ubiquitous computing"
+              ]
+            },
+            {
+              "name": "keywords in digital content",
+              "aliases": [
+                "metadata tagging"
+              ]
+            },
+            {
+              "name": "microchip scanners",
+              "aliases": [
+                "microchip scanner | limitations of microchip scanners | types of microchip scanners | micro-chip scanners | differences between microchip scanners | micro-chip scanner | knowledge of microchip scanners"
+              ]
+            },
+            {
+              "name": "microprocessors",
+              "aliases": [
+                "microchips | computer microprocessors | micro-processors | computer micro-processors | micro-chips | chips"
+              ]
+            },
+            {
+              "name": "Microsoft Access",
+              "aliases": [
+                "Microsoft Office Access | MS Access"
+              ]
+            },
+            {
+              "name": "Microsoft Visio",
+              "aliases": [
+                "Visio 2013 | MS Visio | Visio 2016 | Microsoft Office Visio | Office Visio 2007 | Office Visio 2003 | Visio 2010 | Visio 2000 | Visio 2002"
+              ]
+            },
+            {
+              "name": "Microsoft Visual C++",
+              "aliases": [
+                "MS Visual C++ | Visual C++ | VC++ | MSVC"
+              ]
+            },
+            {
+              "name": "microsystem test procedures",
+              "aliases": [
+                "testing procedures for microsystems | test protocols for microsystems | test procedures for microsystems | testing protocols for micro-systems | testing procedures for micro-systems | test procedures for micro-systems | testing protocols for microsystems | micro-system test protocols | test protocols for micro-systems | micro-system test procedures"
+              ]
+            },
+            {
+              "name": "office software",
+              "aliases": [
+                "office operating system | office IT software | office application | office programme | office soft-ware"
+              ]
+            },
+            {
+              "name": "proxy servers",
+              "aliases": [
+                "Nginx web server"
+              ]
+            },
+            {
+              "name": "screen reader",
+              "aliases": [
+                "assistive technology for reading | text-to-speech software"
+              ]
+            },
+            {
+              "name": "SketchBook Pro",
+              "aliases": [
+                "Autodesk SketchBook Pro | SketchBook"
+              ]
+            },
+            {
+              "name": "software architecture models",
+              "aliases": [
+                "software architecture patterns | software architecture frameworks"
+              ],
+              "children": [
+                {
+                  "name": "unified modelling language",
+                  "aliases": [
+                    "standard modelling language | unified modeling language | uml"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "software interaction design",
+              "aliases": [
+                "interaction design"
+              ],
+              "children": [
+                {
+                  "name": "software UI design patterns",
+                  "aliases": [
+                    "software user interface design patterns | solutions for software user interface tasks | best practices for software user interface tasks | solutions for software UI tasks | software UI design best practices"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "specialised astrology software",
+              "aliases": [
+                "specialised software for astrology | specialized astrology software | specialised astrology computer programs"
+              ]
+            },
+            {
+              "name": "supercomputing",
+              "aliases": [
+                "supercomputing techniques"
+              ]
+            },
+            {
+              "name": "Synfig",
+              "aliases": [
+                "Synfig Studio"
+              ]
+            },
+            {
+              "name": "trading software",
+              "aliases": [
+                "trading application | trading software solution"
+              ]
+            },
+            {
+              "name": "unified modelling language",
+              "aliases": [
+                "standard modelling language | unified modeling language | uml"
+              ]
+            },
+            {
+              "name": "web application security threats",
+              "aliases": [
+                "open web application security project | OWASP"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "database and network design and administration",
+          "children": [
+            {
+              "name": "Absorb (learning management systems)",
+              "aliases": [
+                "Absorb"
+              ]
+            },
+            {
+              "name": "algorithms",
+              "aliases": [
+                "formulae | formulas | algorithm | algorithmic"
+              ]
+            },
+            {
+              "name": "assessment of risks and threats",
+              "aliases": [
+                "principles of assessment of risks and threats | methods for handling security-related information | methods for assessment of risks and threats | principles for handling security-related information | techniques for handling security-related information | techniques for assessment of risks and threats"
+              ]
+            },
+            {
+              "name": "automatic meter reading",
+              "aliases": [
+                "smart metering | smart meter reading | automatically reading meters | automatically reading meter | remote meter reading | meter reading automatically"
+              ]
+            },
+            {
+              "name": "blockchain applications security principles",
+              "aliases": [
+                "security controls for blockchain applications | blockchain security"
+              ]
+            },
+            {
+              "name": "blockchain architecture",
+              "aliases": [
+                "blockchain structure"
+              ]
+            },
+            {
+              "name": "blockchain components",
+              "aliases": [
+                "blockchain | blockchain concepts"
+              ]
+            },
+            {
+              "name": "blockchain concept application",
+              "aliases": [
+                "blockchain technology application"
+              ]
+            },
+            {
+              "name": "blockchain mining principles",
+              "aliases": [
+                "principles of mining in blockchain"
+              ]
+            },
+            {
+              "name": "blockchain signature schemes",
+              "aliases": [
+                "signature schemes for blockchain | digital signature schemes"
+              ]
+            },
+            {
+              "name": "blockchain terminology",
+              "aliases": [
+                "blockchain terms | terminology of blockchain"
+              ]
+            },
+            {
+              "name": "blockchain-based business models",
+              "aliases": [
+                "models for blockchain-based business"
+              ]
+            },
+            {
+              "name": "Brightspace (learning management systems)",
+              "aliases": [
+                "D2L Brightspace | Brightspace Learning Environment | Brightspace learning management system | Desire2Learn Brightspace | Brightspace"
+              ]
+            },
+            {
+              "name": "CA Datacom/DB",
+              "aliases": [
+                "CA-Datacom/DB | CA Datacom | DATACOM/DB"
+              ]
+            },
+            {
+              "name": "call-centre technologies",
+              "aliases": [
+                "call-centre technology | call-centre devices | call-centres technology | call-centre communications | call-centre operations | call-center technologies | call-centre automation"
+              ]
+            },
+            {
+              "name": "Canvas (learning management systems)",
+              "aliases": [
+                "Canvas network | Canvas e-learning tool | Canvas e-learning platform | Canvas platform | Canvas"
+              ]
+            },
+            {
+              "name": "cloud monitoring and reporting",
+              "aliases": [
+                "cloud monitoring | cloud computing monitoring and reporting | cloud reporting"
+              ]
+            },
+            {
+              "name": "cloud security and compliance",
+              "aliases": [
+                "cloud safety and compliance | cloud safety | cloud security | cloud compliance"
+              ]
+            },
+            {
+              "name": "cloud technologies",
+              "aliases": [
+                "cloud computing | edge computing"
+              ],
+              "children": [
+                {
+                  "name": "cloud monitoring and reporting",
+                  "aliases": [
+                    "cloud monitoring | cloud computing monitoring and reporting | cloud reporting"
+                  ]
+                },
+                {
+                  "name": "cloud security and compliance",
+                  "aliases": [
+                    "cloud safety and compliance | cloud safety | cloud security | cloud compliance"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "control panel components",
+              "aliases": [
+                "types of control panel components | components of control panel | range of control panel components | range of control panel parts | types of control panel parts | typology of control panel components | parts of control panel | typology of control panel parts"
+              ]
+            },
+            {
+              "name": "CSS",
+              "aliases": [
+                "Cascading Style Sheets",
+                "css3"
+              ]
+            },
+            {
+              "name": "data analytics",
+              "aliases": [
+                "data anlysis"
+              ]
+            },
+            {
+              "name": "data extraction, transformation and loading tools",
+              "aliases": [
+                "Talend Studio for Data Integration | ETL | Sagent Data Flow | Open Text Integration Center | CloverETL | Pervasive Data Integrator | Data Migrator | Cognos Data Manager | Centerprise Data Integrator | IBM Infosphere WarehoEdition | Elixir Repertoire for Data ETL | Relational Junction ETL Manager | PowerCenter Informatica | Syncsort DMX | Adeptia Integration Server"
+              ],
+              "children": [
+                {
+                  "name": "IBM InfoSphere DataStage",
+                  "aliases": [
+                    "Cognos Data Manager | InfoSphere DataStage MVS Edition | IBM InfoSphere DataStage Workgroup Edition"
+                  ]
+                },
+                {
+                  "name": "IBM InfoSphere Information Server",
+                  "aliases": [
+                    "IBM InfoSphere Information Server platform"
+                  ]
+                },
+                {
+                  "name": "Informatica PowerCenter",
+                  "aliases": [
+                    "PowerCenter Informatica | Informatica Power Center"
+                  ]
+                },
+                {
+                  "name": "Oracle Data Integrator",
+                  "aliases": [
+                    "ODI"
+                  ]
+                },
+                {
+                  "name": "Oracle Warehouse Builder",
+                  "aliases": [
+                    "OWB"
+                  ]
+                },
+                {
+                  "name": "Pentaho Data Integration",
+                  "aliases": [
+                    "PDI | Pentaho Kettle"
+                  ]
+                },
+                {
+                  "name": "QlikView Expressor",
+                  "aliases": [
+                    "QV Expressor | QVE"
+                  ]
+                },
+                {
+                  "name": "SAP Data Services",
+                  "aliases": [
+                    "SAP | SAP analytics cloud"
+                  ]
+                },
+                {
+                  "name": "SAS Data Management",
+                  "aliases": [
+                    "SAS Data Management software"
+                  ]
+                },
+                {
+                  "name": "SQL Server Integration Services",
+                  "aliases": [
+                    "Microsoft SSIS | Microsoft SQL Server Integration Services | SSIS"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "data mining",
+              "aliases": [
+                "data scraping"
+              ],
+              "children": [
+                {
+                  "name": "data mining methods",
+                  "aliases": [
+                    "data mining approaches | data mining mechanisms | data mining arrangements | data mining methodology | data mining processes | a data mining method | methods of data mining"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "data mining methods",
+              "aliases": [
+                "data mining approaches | data mining mechanisms | data mining arrangements | data mining methodology | data mining processes | a data mining method | methods of data mining"
+              ]
+            },
+            {
+              "name": "data models",
+              "aliases": [
+                "data modelling"
+              ]
+            },
+            {
+              "name": "data protection",
+              "aliases": [
+                "principles of information privacy | principles of data protection | information privacy | protection of private data | protection of data | principles of data privacy | protection of private information | data privacy | paradigms of data protection | paradigms of data privacy"
+              ]
+            },
+            {
+              "name": "data security principles",
+              "aliases": [
+                "data security methods | information security principles"
+              ]
+            },
+            {
+              "name": "data storage",
+              "aliases": [
+                "file hosting service"
+              ]
+            },
+            {
+              "name": "data visualisation software",
+              "aliases": [
+                "data presentation software"
+              ]
+            },
+            {
+              "name": "data warehouse",
+              "aliases": [
+                "enterprise data storage | data warehouse solutions | data repository"
+              ]
+            },
+            {
+              "name": "Database",
+              "aliases": [
+                "non-relational database | types of databases | relational database",
+                "databases"
+              ]
+            },
+            {
+              "name": "database development tools",
+              "aliases": [
+                "Microcontrollers"
+              ]
+            },
+            {
+              "name": "database management systems",
+              "aliases": [
+                "PointBase Embedded | R:Base | Adaptive Server Anywhere | Oracle Lite | Rdb | Interbase | Velocis | Jasmine ii | Raima Database Manager | IDMS | YARD-SQL | Versant | Oracle 8I | Db.linux | NonStop SQL | Quadbase SQL Server | PointBase Network Server | Pervasive.SQL 2000 | UniData | UniSQL | Adaptive Server Enterprise | Db.star | POET Object Server Suite | Informix Dynamic Server 2000 | Informix Extended Parallel Server | DBMS | Cloudscape | SUPRA | database systems | SQLBase | IMS DB | Peoplesoft | Datacom | DB2 Everyplace | Sybase | PointBase Mobile | Model 204 | Advantage Database Server | Pervasive.SQL Workgroup | Adabas D | TimesTen | DB engines | Adabas | Objectivity DB | SQL | Ingres ii"
+              ],
+              "children": [
+                {
+                  "name": "CA Datacom/DB",
+                  "aliases": [
+                    "CA-Datacom/DB | CA Datacom | DATACOM/DB"
+                  ]
+                },
+                {
+                  "name": "DB2",
+                  "aliases": [
+                    "DB2 Connect | DB2 for i | IBM DB2 | IBM DB2 database software | DB2 for z/OS | DB2 database software | DB2 on Cloud"
+                  ]
+                },
+                {
+                  "name": "Filemaker (database management systems)",
+                  "aliases": [
+                    "FileMaker Pro | FileMaker | FileMaker Go"
+                  ]
+                },
+                {
+                  "name": "IBM Informix",
+                  "aliases": [
+                    "Informix Extended Parallel Server | Informix Advanced Workgroup Edition | Informix Workgroup Edition | Informix Enterprise Edition | Informix Dynamic Server | Informix Advanced Enterprise Edition | Informix Express Edition"
+                  ]
+                },
+                {
+                  "name": "MarkLogic",
+                  "aliases": [
+                    "MarkLogic NoSQL database | MarkLogic non-relational database"
+                  ]
+                },
+                {
+                  "name": "Microsoft Access",
+                  "aliases": [
+                    "Microsoft Office Access | MS Access"
+                  ]
+                },
+                {
+                  "name": "MySQL",
+                  "aliases": [
+                    "MySQL Classic Edition | MySQL Enterprise Edition | MySQL Embedded (OEM/ISV) | MySQL Standard Edition | MySQL Cluster CGE"
+                  ]
+                },
+                {
+                  "name": "NoSQL",
+                  "aliases": [
+                    "Not Only SQL non-relational database | NoSQL database management system | NoSQL non-relational database | Not Only SQL database management system"
+                  ]
+                },
+                {
+                  "name": "ObjectStore",
+                  "aliases": [
+                    "Ignite ObjectStore | ObjectStore Standard Edition | Ignite’s ObjectStore Standard Edition"
+                  ]
+                },
+                {
+                  "name": "OpenEdge Database",
+                  "aliases": [
+                    "OpenEdge RDBMS Advanced Enterprise Edition | OpenEdge RDBMS | Progress OpenEdge Relational Database Management System"
+                  ]
+                },
+                {
+                  "name": "Oracle Relational Database",
+                  "aliases": [
+                    "Rdb | Oracle Rdb"
+                  ]
+                },
+                {
+                  "name": "PostgreSQL",
+                  "aliases": [
+                    "Postgres",
+                    "postgres"
+                  ]
+                },
+                {
+                  "name": "SQL Server",
+                  "aliases": [
+                    "MS SQL Server",
+                    "mssql"
+                  ]
+                },
+                {
+                  "name": "Teradata Database",
+                  "aliases": [
+                    "Teradata | Teradata Integrated Data Warehouse"
+                  ]
+                },
+                {
+                  "name": "TripleStore",
+                  "aliases": [
+                    "RDF store"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "database quality standards",
+              "aliases": [
+                "databases quality standards | evaluation of database quality | database quality evaluation | database quality standard | quality standards for databases | quality standard for databases | databases quality evaluation"
+              ]
+            },
+            {
+              "name": "DB2",
+              "aliases": [
+                "DB2 Connect | DB2 for i | IBM DB2 | IBM DB2 database software | DB2 for z/OS | DB2 database software | DB2 on Cloud"
+              ]
+            },
+            {
+              "name": "decentralised identifiers",
+              "aliases": [
+                "DiDs"
+              ]
+            },
+            {
+              "name": "digital identity management",
+              "aliases": [
+                "IAM | digital identity methods"
+              ]
+            },
+            {
+              "name": "distributed computing",
+              "aliases": [
+                "parallel computing | grid computing | cluster computing"
+              ]
+            },
+            {
+              "name": "distributed directory information services",
+              "aliases": [
+                "active directory | directory service | install directory services"
+              ]
+            },
+            {
+              "name": "distributed ledger technologies consensus protocols",
+              "aliases": [
+                "consensus protocols of distributed ledger technologies"
+              ]
+            },
+            {
+              "name": "distributed ledger technologies vulnerabilities",
+              "aliases": [
+                "security in distributed ledger technology"
+              ]
+            },
+            {
+              "name": "domain name service",
+              "aliases": [
+                "DNS | DNS server"
+              ]
+            },
+            {
+              "name": "Edmodo",
+              "aliases": [
+                "Edmodo online learning tool | Edmodo e-learning platform | Edmodo education platform"
+              ]
+            },
+            {
+              "name": "Engrade",
+              "aliases": [
+                "Engrade e-learning platform"
+              ]
+            },
+            {
+              "name": "ethical hacking principles",
+              "aliases": [
+                "ethical hacking techniques"
+              ]
+            },
+            {
+              "name": "Filemaker (database management systems)",
+              "aliases": [
+                "FileMaker Pro | FileMaker | FileMaker Go"
+              ]
+            },
+            {
+              "name": "food waste monitoring systems",
+              "aliases": [
+                "food waste monitoring digital tools | food waste monitoring applications | digital tools for food waste monitoring | hospitality food waste monitoring systems | food loss tracking"
+              ]
+            },
+            {
+              "name": "Grovo",
+              "aliases": [
+                "Grovo e-learning platform"
+              ]
+            },
+            {
+              "name": "hybrid model",
+              "aliases": [
+                "knowledge of hybrid model | theory of hybrid model | Hybrid model | hybrid model principles | hybrid model fundamentals"
+              ]
+            },
+            {
+              "name": "IBM Informix",
+              "aliases": [
+                "Informix Extended Parallel Server | Informix Advanced Workgroup Edition | Informix Workgroup Edition | Informix Enterprise Edition | Informix Dynamic Server | Informix Advanced Enterprise Edition | Informix Express Edition"
+              ]
+            },
+            {
+              "name": "IBM InfoSphere DataStage",
+              "aliases": [
+                "Cognos Data Manager | InfoSphere DataStage MVS Edition | IBM InfoSphere DataStage Workgroup Edition"
+              ]
+            },
+            {
+              "name": "IBM InfoSphere Information Server",
+              "aliases": [
+                "IBM InfoSphere Information Server platform"
+              ]
+            },
+            {
+              "name": "ICT encryption",
+              "aliases": [
+                "TLS | symmetric-key algorithm | asymmetric cryptography | public-key cryptography | transport layer security | SSL | secure sockets layer"
+              ]
+            },
+            {
+              "name": "ICT network cable limitations",
+              "aliases": [
+                "ICT network wire limitations | ICT network line limitations"
+              ]
+            },
+            {
+              "name": "ICT network routing",
+              "aliases": [
+                "ICT network routing techniques | ICT network processes | ICT network routing processes | ICT network techniques"
+              ]
+            },
+            {
+              "name": "ICT network security risks",
+              "aliases": [
+                "ICT network security threats | information systems security risks"
+              ]
+            },
+            {
+              "name": "ICT network simulation",
+              "aliases": [
+                "ICT network simulation tools | ICT network simulation methods | ICT network simulation systems"
+              ]
+            },
+            {
+              "name": "ICT networking hardware",
+              "aliases": [
+                "ICT networking devices | computer networking devices"
+              ]
+            },
+            {
+              "name": "ICT security standards",
+              "aliases": [
+                "ICT security compliances | cyber security frameworks | IT security frameworks | cyber security compliances | ICT security frameworks | information security compliances | information security frameworks | cyber security standards | IT security compliances | IT security standards | information security standards"
+              ]
+            },
+            {
+              "name": "ICT system integration",
+              "aliases": [
+                "system integration"
+              ]
+            },
+            {
+              "name": "Informatica PowerCenter",
+              "aliases": [
+                "PowerCenter Informatica | Informatica Power Center"
+              ]
+            },
+            {
+              "name": "information architecture",
+              "aliases": [
+                "data architecture | information system design"
+              ]
+            },
+            {
+              "name": "information confidentiality",
+              "aliases": [
+                "data confidentiality | consumer data privacy | data access control"
+              ]
+            },
+            {
+              "name": "information extraction",
+              "aliases": [
+                "information extraction techniques"
+              ]
+            },
+            {
+              "name": "information security strategy",
+              "aliases": [
+                "InfoSec strategy"
+              ]
+            },
+            {
+              "name": "information structure",
+              "aliases": [
+                "data structuring methods | types of data infrastructure | data infrastructure"
+              ]
+            },
+            {
+              "name": "integrated development environment software",
+              "aliases": [
+                "Zeus IDE | Borland C++ Builder | CodeForge | Dev-C++ | DialogBlocks | CodeLite | Anjuta | Philasmicos Entwickler Studio | SPE | NetBeans | MinGW Developer Studio | wxHatch | IDE | Code::Blocks"
+              ],
+              "children": [
+                {
+                  "name": "Eclipse (integrated development environment software)",
+                  "aliases": [
+                    "Eclipse | knowledge of Eclipse | Eclipse IDE"
+                  ]
+                },
+                {
+                  "name": "KDevelop",
+                  "aliases": [
+                    "kdevplatform | KDevelop platform"
+                  ]
+                },
+                {
+                  "name": "Microsoft Visual C++",
+                  "aliases": [
+                    "MS Visual C++ | Visual C++ | VC++ | MSVC"
+                  ]
+                },
+                {
+                  "name": "Xcode",
+                  "aliases": [
+                    "Xcode IDE"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "inter-organisational middleware system",
+              "aliases": [
+                "IOMS"
+              ]
+            },
+            {
+              "name": "JavaScript Framework"
+            },
+            {
+              "name": "JSSS",
+              "aliases": [
+                "JavaScript Style Sheets"
+              ]
+            },
+            {
+              "name": "KDevelop",
+              "aliases": [
+                "kdevplatform | KDevelop platform"
+              ]
+            },
+            {
+              "name": "knowledge base",
+              "aliases": [
+                "IT knowledge base"
+              ]
+            },
+            {
+              "name": "LAMS",
+              "aliases": [
+                "Learning Activity Management System"
+              ]
+            },
+            {
+              "name": "LESS",
+              "aliases": [
+                "LESS language"
+              ]
+            },
+            {
+              "name": "Litmos",
+              "aliases": [
+                "Litmos platform"
+              ]
+            },
+            {
+              "name": "MarkLogic",
+              "aliases": [
+                "MarkLogic NoSQL database | MarkLogic non-relational database"
+              ]
+            },
+            {
+              "name": "mobile device management",
+              "aliases": [
+                "BYOD | cell phone device management | mobile terminals | bring your own device"
+              ]
+            },
+            {
+              "name": "Moodle",
+              "aliases": [
+                "Moodle e-learning platform"
+              ]
+            },
+            {
+              "name": "MySQL",
+              "aliases": [
+                "MySQL Classic Edition | MySQL Enterprise Edition | MySQL Embedded (OEM/ISV) | MySQL Standard Edition | MySQL Cluster CGE"
+              ]
+            },
+            {
+              "name": "network management system tools",
+              "aliases": [
+                "network management system components"
+              ]
+            },
+            {
+              "name": "network standards",
+              "aliases": [
+                "network protocols | network guidelines | network codes"
+              ]
+            },
+            {
+              "name": "NoSQL",
+              "aliases": [
+                "Not Only SQL non-relational database | NoSQL database management system | NoSQL non-relational database | Not Only SQL database management system"
+              ]
+            },
+            {
+              "name": "ObjectStore",
+              "aliases": [
+                "Ignite ObjectStore | ObjectStore Standard Edition | Ignite’s ObjectStore Standard Edition"
+              ]
+            },
+            {
+              "name": "online analytical processing",
+              "aliases": [
+                "OLAP databases | Cube databases | OLAP"
+              ]
+            },
+            {
+              "name": "Open source model"
+            },
+            {
+              "name": "OpenEdge Database",
+              "aliases": [
+                "OpenEdge RDBMS Advanced Enterprise Edition | OpenEdge RDBMS | Progress OpenEdge Relational Database Management System"
+              ]
+            },
+            {
+              "name": "Oracle Data Integrator",
+              "aliases": [
+                "ODI"
+              ]
+            },
+            {
+              "name": "Oracle Relational Database",
+              "aliases": [
+                "Rdb | Oracle Rdb"
+              ]
+            },
+            {
+              "name": "Oracle Warehouse Builder",
+              "aliases": [
+                "OWB"
+              ]
+            },
+            {
+              "name": "Outsourcing model",
+              "aliases": [
+                "OBS"
+              ]
+            },
+            {
+              "name": "Pentaho Data Integration",
+              "aliases": [
+                "PDI | Pentaho Kettle"
+              ]
+            },
+            {
+              "name": "PostgreSQL",
+              "aliases": [
+                "Postgres",
+                "postgres"
+              ]
+            },
+            {
+              "name": "printed circuit boards",
+              "aliases": [
+                "circuit boards | assembled PCB | PCB | electronic circuit boards | assembled printed circuit board | PCBs | bare PCB | bare printed circuit board"
+              ]
+            },
+            {
+              "name": "printed circuit boards testing methods",
+              "aliases": [
+                "in-circuit test | testing methods for printed circuit boards | automated optical inspection | AOI | joint test action group test | methods for testing PCBs | JTAG test | methods for testing printed circuit boards | PCB testing methods | PCBs testing methods"
+              ]
+            },
+            {
+              "name": "procurement of ICT network equipment",
+              "aliases": [
+                "network equipment vendors | NEC | Alcatel-Lucent | Ericsson | Juniper Networks | Avaya | Ciena"
+              ],
+              "children": [
+                {
+                  "name": "Cisco",
+                  "aliases": [
+                    "Network Magic | Cisco Systems"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "QlikView Expressor",
+              "aliases": [
+                "QV Expressor | QVE"
+              ]
+            },
+            {
+              "name": "real-time computing",
+              "aliases": [
+                "real-time computing systems | real-time data systems"
+              ]
+            },
+            {
+              "name": "Sakai",
+              "aliases": [
+                "Sakai Project"
+              ]
+            },
+            {
+              "name": "SAP Data Services",
+              "aliases": [
+                "SAP | SAP analytics cloud"
+              ]
+            },
+            {
+              "name": "SAS Data Management",
+              "aliases": [
+                "SAS Data Management software"
+              ]
+            },
+            {
+              "name": "Sass",
+              "aliases": [
+                "Syntactically Awesome Stylesheets"
+              ]
+            },
+            {
+              "name": "Schoology",
+              "aliases": [
+                "Schoology e-learning platform"
+              ]
+            },
+            {
+              "name": "service-oriented modelling",
+              "aliases": [
+                "ICT service models | service oriented models | SaaS model | Software as a service | SaaS | service-oriented modeling"
+              ],
+              "children": [
+                {
+                  "name": "hybrid model",
+                  "aliases": [
+                    "knowledge of hybrid model | theory of hybrid model | Hybrid model | hybrid model principles | hybrid model fundamentals"
+                  ]
+                },
+                {
+                  "name": "Open source model"
+                },
+                {
+                  "name": "Outsourcing model",
+                  "aliases": [
+                    "OBS"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "solution deployment",
+              "aliases": [
+                "implementation of solutions | software solution deployment"
+              ]
+            },
+            {
+              "name": "SQL Server",
+              "aliases": [
+                "MS SQL Server",
+                "mssql"
+              ]
+            },
+            {
+              "name": "SQL Server Integration Services",
+              "aliases": [
+                "Microsoft SSIS | Microsoft SQL Server Integration Services | SSIS"
+              ]
+            },
+            {
+              "name": "standards for web-based e-learning",
+              "aliases": [
+                "requirements for web-based e-learning | specifications for web-based e-learning"
+              ]
+            },
+            {
+              "name": "style sheet languages",
+              "aliases": [
+                "Formatted Output Specification Instance | Extensible Stylesheet Language | cascading style sheets | CSS | SMIL Timesheets | Document Style Semantics and Specification Language"
+              ],
+              "children": [
+                {
+                  "name": "CSS",
+                  "aliases": [
+                    "Cascading Style Sheets",
+                    "css3"
+                  ]
+                },
+                {
+                  "name": "JSSS",
+                  "aliases": [
+                    "JavaScript Style Sheets"
+                  ]
+                },
+                {
+                  "name": "LESS",
+                  "aliases": [
+                    "LESS language"
+                  ]
+                },
+                {
+                  "name": "Sass",
+                  "aliases": [
+                    "Syntactically Awesome Stylesheets"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "system backup best practice",
+              "aliases": [
+                "backup systems reliability | disaster recovery best practice"
+              ]
+            },
+            {
+              "name": "Taleo",
+              "aliases": [
+                "Taleo e-learning platform"
+              ]
+            },
+            {
+              "name": "task algorithmisation",
+              "aliases": [
+                "task algorithm development"
+              ]
+            },
+            {
+              "name": "Teradata Database",
+              "aliases": [
+                "Teradata | Teradata Integrated Data Warehouse"
+              ]
+            },
+            {
+              "name": "transmission technology",
+              "aliases": [
+                "optical fibers | field of transmission technology | fiber optic | typology of communication technology | VOIP | typology of transmission technology | field of communication technology | analog transmission | types of communication technology | types of transmission technology | digital transmission | Ethernet"
+              ]
+            },
+            {
+              "name": "TripleStore",
+              "aliases": [
+                "RDF store"
+              ]
+            },
+            {
+              "name": "unstructured data",
+              "aliases": [
+                "types of unstructured data"
+              ]
+            },
+            {
+              "name": "web analytics"
+            },
+            {
+              "name": "web based collaborative platforms",
+              "aliases": [
+                "digital collaboration tools | online collaborative tools"
+              ]
+            },
+            {
+              "name": "WizIQ",
+              "aliases": [
+                "WizIQ program | WizIQ e-learning platform | WizIQ programme"
+              ]
+            },
+            {
+              "name": "Xcode",
+              "aliases": [
+                "Xcode IDE"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "information and communication technologies not elsewhere classified",
+          "children": [
+            {
+              "name": "advanced driver assistant systems",
+              "aliases": [
+                "vehicle-based intelligent safety systems | advanced driver aids for crash avoidance | advanced driver aids | advanced driver assistant systems for crash avoidance | vehicle-based intelligent safety systems for crash avoidance"
+              ]
+            },
+            {
+              "name": "artificial neural networks",
+              "aliases": [
+                "ANN | neural networks | neural nets | artificial neural nets | NN"
+              ]
+            },
+            {
+              "name": "augmented reality",
+              "aliases": [
+                "AR techniques | augmented reality creation process | AR creation process | augmented reality techniques | AR"
+              ]
+            },
+            {
+              "name": "Blockchain",
+              "aliases": [
+                "blockchain technology",
+                "block-chain",
+                "web3"
+              ]
+            },
+            {
+              "name": "blockchain consensus mechanisms",
+              "aliases": [
+                "proof of stake | delegated proof of stake | POS | blockchain consensus protocols | CaaS | POW | distributed ledger consensus protocols | proof of authority | proof of work | consensus building mechanisms | consensus as a service | dPOS"
+              ]
+            },
+            {
+              "name": "Computer Vision",
+              "aliases": [
+                "OCR | cuda | matlab | tensorflow | simpleCV | openCV | keras"
+              ]
+            },
+            {
+              "name": "configuration of the tote room hardware",
+              "aliases": [
+                "tote room hardware configuration | arrangement of the tote room hardware | conformation of the tote room hardware"
+              ]
+            },
+            {
+              "name": "distributed ledger technology",
+              "aliases": [
+                "principles of distributed ledger technology"
+              ]
+            },
+            {
+              "name": "image recognition",
+              "aliases": [
+                "image interpretation | image detection | visual recognition | visual detection"
+              ]
+            },
+            {
+              "name": "Machine Learning",
+              "aliases": [
+                "ML | supervised learning | machine learning models | semi-supervised learning | unsupervised learning",
+                "ml"
+              ]
+            },
+            {
+              "name": "principles of artificial intelligence",
+              "aliases": [
+                "artificial intelligence in process | principles of AI"
+              ],
+              "children": [
+                {
+                  "name": "artificial neural networks",
+                  "aliases": [
+                    "ANN | neural networks | neural nets | artificial neural nets | NN"
+                  ]
+                },
+                {
+                  "name": "Machine Learning",
+                  "aliases": [
+                    "ML | supervised learning | machine learning models | semi-supervised learning | unsupervised learning",
+                    "ml"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "self-service technologies in tourism",
+              "aliases": [
+                "automated tourism services | self-service technologies in the tourism industry | autonomous tourism experiences"
+              ]
+            },
+            {
+              "name": "smart city features",
+              "aliases": [
+                "advanced mobility functionalities for smart cities | big data technologies for smart cities | advanced mobility functionalities creation for smart cities | smart city characteristics | big data technologies for novel software ecosystems in smart cities"
+              ]
+            },
+            {
+              "name": "vehicle-to-everything technologies",
+              "aliases": [
+                "V2X | V2X technologies | knowledge of vehicle-to-everything technologies"
+              ]
+            },
+            {
+              "name": "virtual reality",
+              "aliases": [
+                "digital environment virtual reality | virtual reality systems | digital environment life experiences simulation | virtual reality simulation process | simulated reality"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "inter-disciplinary programmes and qualifications involving information and communication technologies (icts)",
+          "children": [
+            {
+              "name": "blockchain history",
+              "aliases": [
+                "blockchain technology history | history of blockchain"
+              ]
+            },
+            {
+              "name": "blockchain-based services regulation",
+              "aliases": [
+                "regulatory framework for blockchain | legal guidance for blockchain | legal regulations for blockchain"
+              ]
+            },
+            {
+              "name": "cognitive computing",
+              "aliases": [
+                "cognitive computing technology"
+              ]
+            },
+            {
+              "name": "computer graphics",
+              "aliases": [
+                "vector graphics | interactive computer graphics"
+              ]
+            },
+            {
+              "name": "Data Science",
+              "aliases": [
+                "data science process | science of data",
+                "data scientist"
+              ]
+            },
+            {
+              "name": "digital systems",
+              "aliases": [
+                "digital information systems"
+              ]
+            },
+            {
+              "name": "electronic business",
+              "aliases": [
+                "E-business"
+              ]
+            },
+            {
+              "name": "scientific computing",
+              "aliases": [
+                "computational science | scientific computation"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "software and applications development and analysis",
+          "children": [
+            {
+              "name": "ABAP",
+              "aliases": [
+                "ABAP Programming Techniques | ABAP software development | ABAP programming techniques | ABAP software techniques"
+              ]
+            },
+            {
+              "name": "ABBYY FineReader",
+              "aliases": [
+                "ABBYY FineReader PDF software | OCR software"
+              ]
+            },
+            {
+              "name": "adobe creative suite",
+              "aliases": [
+                "Adobe Creative Cloud"
+              ]
+            },
+            {
+              "name": "Agile development",
+              "aliases": [
+                "Agile Development Environment | Agile Software Development Practices | Agile frameworks | Agile software environment | Agile development framework | Agile software development methods | Agile software development | Agile scrum development framework"
+              ]
+            },
+            {
+              "name": "Aircrack (penetration testing tool)",
+              "aliases": [
+                "Aircrack"
+              ]
+            },
+            {
+              "name": "AJAX",
+              "aliases": [
+                "AJAX technology | AJAX software | AJAX techniques"
+              ]
+            },
+            {
+              "name": "Ajax Framework",
+              "aliases": [
+                "Ajax Framework features | Ajax Framework features for web applications development | Ajax framework for web applications development | Ajax Framework components | AJAX Development Environments | AJAX Framework for Web Application Development | Ajax framework features for web applications development | Ajax software development environments | Ajax framework components | Ajax framework features | AJAX Framework Features for Web Development | Ajax Framework for web applications development"
+              ]
+            },
+            {
+              "name": "Android (mobile operating systems)"
+            },
+            {
+              "name": "Angular",
+              "aliases": [
+                "Angular related algorithms | testing in Angular | programming paradigms in Angular | coding in Angular | Angular techniques and principles",
+                "angularjs"
+              ]
+            },
+            {
+              "name": "Ansible",
+              "aliases": [
+                "Ansible automation tool"
+              ]
+            },
+            {
+              "name": "Apache Maven",
+              "aliases": [
+                "Maven"
+              ]
+            },
+            {
+              "name": "Apache Tomcat",
+              "aliases": [
+                "Tomcat"
+              ]
+            },
+            {
+              "name": "APL",
+              "aliases": [
+                "APL programming paradigms"
+              ]
+            },
+            {
+              "name": "application usability",
+              "aliases": [
+                "software usability"
+              ]
+            },
+            {
+              "name": "ASP.NET",
+              "aliases": [
+                "ASP.NET framework"
+              ]
+            },
+            {
+              "name": "Assembly (computer programming)",
+              "aliases": [
+                "Assembly computer programming paradigms | Assembly software development techniques | Assembly software development principles | Assembly | Assembly algorithms"
+              ]
+            },
+            {
+              "name": "ATM systems",
+              "aliases": [
+                "cash points | automatic teller machine systems | ATM system | holes in the wall | automated banking machines | automated teller machines | minibanks | automated teller machine systems | ABMs | cash machines"
+              ]
+            },
+            {
+              "name": "Backbox (penetration testing tool)",
+              "aliases": [
+                "Backbox"
+              ]
+            },
+            {
+              "name": "BlackArch",
+              "aliases": [
+                "BlackArch testing tool"
+              ]
+            },
+            {
+              "name": "BlackBerry",
+              "aliases": [
+                "BlackBerry System"
+              ]
+            },
+            {
+              "name": "blockchain application areas",
+              "aliases": [
+                "blockchain application fields | areas of blockchain application"
+              ]
+            },
+            {
+              "name": "blockchain design patterns",
+              "aliases": [
+                "design patterns of blockchain"
+              ]
+            },
+            {
+              "name": "blockchain platforms",
+              "aliases": [
+                "blockchain ecosystems | blockchain infrastructures"
+              ]
+            },
+            {
+              "name": "C#",
+              "aliases": [
+                "C Sharp"
+              ]
+            },
+            {
+              "name": "C++",
+              "aliases": [
+                "C++ software | C++ framework",
+                "cpp"
+              ]
+            },
+            {
+              "name": "CAD software",
+              "aliases": [
+                "CADD software | CAD software for modelling | computer assisted design | software computer assisted design and drafting software | CAD software for design | CAD software for simulation"
+              ],
+              "children": [
+                {
+                  "name": "CAD for footwear",
+                  "aliases": [
+                    "footwear computer-aided design | footwear CAD | computer-aided design for footwear | 3D computer-aided design for footwear | footwear 2D CAD | 3D CAD for footwear | footwear 3D CAD | 2D CAD for footwear | 3D and 2D CAD for footwear | 2D computer-aided design for footwear"
+                  ]
+                },
+                {
+                  "name": "CADD software",
+                  "aliases": [
+                    "CADD software specifications and operations | CADD softwares | computer-aided design and drafting software"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CADD software",
+              "aliases": [
+                "CADD software specifications and operations | CADD softwares | computer-aided design and drafting software"
+              ]
+            },
+            {
+              "name": "CAE software",
+              "aliases": [
+                "computer-aided engineering software | computer-aided engineering softwares | CAE software tools"
+              ]
+            },
+            {
+              "name": "Cain and Abel (penetration testing tool)",
+              "aliases": [
+                "Cain and Abel penetration testing software | Cain and Abel password recovery tool | Cain and Abel | Cain and Abel software for penetration testing | Cain and Abel penetration testing tool"
+              ]
+            },
+            {
+              "name": "CAM software",
+              "aliases": [
+                "NC manufacturing software | computer-aided manufacturing software | computer aided manufacturing software | numeric control manufacturing software"
+              ]
+            },
+            {
+              "name": "captioning software",
+              "aliases": [
+                "captioning program | caption software | captioning plugin"
+              ]
+            },
+            {
+              "name": "Chef (tools for software configuration management)",
+              "aliases": [
+                "Chef software"
+              ]
+            },
+            {
+              "name": "Cisco",
+              "aliases": [
+                "Network Magic | Cisco Systems"
+              ]
+            },
+            {
+              "name": "COBOL",
+              "aliases": [
+                "COBOL programming language | Cobol | COBOL applications | COBOL software"
+              ]
+            },
+            {
+              "name": "Codenvy",
+              "aliases": [
+                "Codenvy platform | Codenvy tool"
+              ]
+            },
+            {
+              "name": "CoffeeScript",
+              "aliases": [
+                "CoffeeScript coding techniques | CoffeeScript software development techniques | CoffeeScript programming paradigms | CoffeeScript software development principles | CoffeeScript algorithms"
+              ]
+            },
+            {
+              "name": "Common Lisp",
+              "aliases": [
+                "Common Lisp programming language"
+              ]
+            },
+            {
+              "name": "computer programming",
+              "aliases": [
+                "GCC | Ada | ALGOL | Visual Basic .NET | Visual Basic | HyperTalk | AppleScript | Ceylon | LabVIEW | Euphoria | Subversion | OCaml | PL/I | MSVC++ | Dylan | AspectJ | Korn-shell | STL | Io | Hack | Turing | Object Pascal | Curl | DIBOL | cT | KnockoutJS | bash | Seed7 | Emacs Lisp | OpenCV | Rebol | Lua | BCPL | ActionScript | C shell | AWK | INTERCAL | COMAL | PowerShell | occam | Fantom | Caml | Z shell | Tcl | Squirrel-script | IDL | Gosu | Fortran | X10 | AngularJS | REXX | BizTalk | ColdFusion | PostScript | TACL"
+              ],
+              "children": [
+                {
+                  "name": "ABAP",
+                  "aliases": [
+                    "ABAP Programming Techniques | ABAP software development | ABAP programming techniques | ABAP software techniques"
+                  ]
+                },
+                {
+                  "name": "AJAX",
+                  "aliases": [
+                    "AJAX technology | AJAX software | AJAX techniques"
+                  ]
+                },
+                {
+                  "name": "APL",
+                  "aliases": [
+                    "APL programming paradigms"
+                  ]
+                },
+                {
+                  "name": "ASP.NET",
+                  "aliases": [
+                    "ASP.NET framework"
+                  ]
+                },
+                {
+                  "name": "Assembly (computer programming)",
+                  "aliases": [
+                    "Assembly computer programming paradigms | Assembly software development techniques | Assembly software development principles | Assembly | Assembly algorithms"
+                  ]
+                },
+                {
+                  "name": "C#",
+                  "aliases": [
+                    "C Sharp"
+                  ]
+                },
+                {
+                  "name": "C++",
+                  "aliases": [
+                    "C++ software | C++ framework",
+                    "cpp"
+                  ]
+                },
+                {
+                  "name": "COBOL",
+                  "aliases": [
+                    "COBOL programming language | Cobol | COBOL applications | COBOL software"
+                  ]
+                },
+                {
+                  "name": "CoffeeScript",
+                  "aliases": [
+                    "CoffeeScript coding techniques | CoffeeScript software development techniques | CoffeeScript programming paradigms | CoffeeScript software development principles | CoffeeScript algorithms"
+                  ]
+                },
+                {
+                  "name": "Common Lisp",
+                  "aliases": [
+                    "Common Lisp programming language"
+                  ]
+                },
+                {
+                  "name": "Erlang",
+                  "aliases": [
+                    "Erlang programming language"
+                  ]
+                },
+                {
+                  "name": "Groovy",
+                  "aliases": [
+                    "Groovy software techniques | Groovy programming language | Groorvy software development"
+                  ]
+                },
+                {
+                  "name": "Haskell",
+                  "aliases": [
+                    "Haskell techniques"
+                  ]
+                },
+                {
+                  "name": "Java (computer programming)",
+                  "aliases": [
+                    "Java 2 | Java 2 enterprise edition | Java"
+                  ]
+                },
+                {
+                  "name": "JavaScript",
+                  "aliases": [
+                    "Client-side JavaScript | Live Script | Escript | CSJS | Mocha | Server-side JavaScript",
+                    "js",
+                    "ecmascript"
+                  ],
+                  "children": [
+                    {
+                      "name": "Angular",
+                      "aliases": [
+                        "Angular related algorithms | testing in Angular | programming paradigms in Angular | coding in Angular | Angular techniques and principles",
+                        "angularjs"
+                      ]
+                    },
+                    {
+                      "name": "jQuery"
+                    },
+                    {
+                      "name": "Next.js",
+                      "aliases": [
+                        "nextjs"
+                      ]
+                    },
+                    {
+                      "name": "React",
+                      "aliases": [
+                        "reactjs",
+                        "react.js"
+                      ]
+                    },
+                    {
+                      "name": "TypeScript",
+                      "aliases": [
+                        "TypeScript programming language"
+                      ]
+                    },
+                    {
+                      "name": "Vue.js",
+                      "aliases": [
+                        "vue",
+                        "vuejs"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Lisp",
+                  "aliases": [
+                    "Lisp software development principles | Lisp algorithms | Lisp software development techniques | Lisp programming paradigms | Lisp coding techniques"
+                  ]
+                },
+                {
+                  "name": "MATLAB",
+                  "aliases": [
+                    "MATLAB software development principles | MATLAB coding techniques | MATLAB algorithms | MATLAB software development techniques | MATLAB programming paradigms"
+                  ]
+                },
+                {
+                  "name": "ML (computer programming)",
+                  "aliases": [
+                    "ML | ML systems | ML development principles"
+                  ]
+                },
+                {
+                  "name": "Objective-C",
+                  "aliases": [
+                    "Objective C"
+                  ]
+                },
+                {
+                  "name": "OpenEdge Advanced Business Language",
+                  "aliases": [
+                    "OpenEdge Advanced Business Language techniques"
+                  ]
+                },
+                {
+                  "name": "Pascal (computer programming)",
+                  "aliases": [
+                    "Pascal"
+                  ]
+                },
+                {
+                  "name": "Perl",
+                  "aliases": [
+                    "Practical Extraction and Report Language | PONIE"
+                  ]
+                },
+                {
+                  "name": "PHP",
+                  "aliases": [
+                    "Hypertext Preprocessor | Personal Home Page"
+                  ],
+                  "children": [
+                    {
+                      "name": "Laravel"
+                    },
+                    {
+                      "name": "Symfony"
+                    },
+                    {
+                      "name": "WordPress",
+                      "aliases": [
+                        "WordPress CMS"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Prolog (computer programming)",
+                  "aliases": [
+                    "Prolog"
+                  ]
+                },
+                {
+                  "name": "Python (computer programming)",
+                  "aliases": [
+                    "Python 3K | Python"
+                  ]
+                },
+                {
+                  "name": "Ruby (computer programming)"
+                },
+                {
+                  "name": "SAP R3",
+                  "aliases": [
+                    "SAP R/3 | SAP R/3 Enterprise Edition | SAP S/4 HANA | SAP R/1 | SAP ERP | SAP R/2 | SAP R/3 Enterprise Central Component | SAP ERP 6.0: Enhancement Packages"
+                  ]
+                },
+                {
+                  "name": "SAS language",
+                  "aliases": [
+                    "SAS coding | SAS algorithms | SAS testing | SAS algorithm | SAS programming language | SAS principles for software development | SAS techniques for software development"
+                  ]
+                },
+                {
+                  "name": "Scratch (computer programming)",
+                  "aliases": [
+                    "Scratch"
+                  ]
+                },
+                {
+                  "name": "Smalltalk (computer programming)",
+                  "aliases": [
+                    "Smalltalk programming system | Smalltalk"
+                  ]
+                },
+                {
+                  "name": "Swift (computer programming)",
+                  "aliases": [
+                    "Swift programming paradigms | Swift software development techniques | Swift software development principles | Swift | Swift algorithms"
+                  ]
+                },
+                {
+                  "name": "TypeScript",
+                  "aliases": [
+                    "TypeScript programming language"
+                  ]
+                },
+                {
+                  "name": "VBScript",
+                  "aliases": [
+                    "VBScript for web-based scripting | VBScript programming paradigms | VBScript coding techniques | VBScript scripting techniques | VBScript algorithms"
+                  ]
+                },
+                {
+                  "name": "Visual Basic",
+                  "aliases": [
+                    "VB.NET | .NET | Visual Studio .NET | Visual Studio | VB"
+                  ]
+                },
+                {
+                  "name": "web programming",
+                  "aliases": [
+                    "markup programming"
+                  ],
+                  "children": [
+                    {
+                      "name": "AJAX",
+                      "aliases": [
+                        "AJAX technology | AJAX software | AJAX techniques"
+                      ]
+                    },
+                    {
+                      "name": "Apache Tomcat",
+                      "aliases": [
+                        "Tomcat"
+                      ]
+                    },
+                    {
+                      "name": "IBM WebSphere",
+                      "aliases": [
+                        "WebSphere application server"
+                      ]
+                    },
+                    {
+                      "name": "JavaScript",
+                      "aliases": [
+                        "Client-side JavaScript | Live Script | Escript | CSJS | Mocha | Server-side JavaScript",
+                        "js",
+                        "ecmascript"
+                      ]
+                    },
+                    {
+                      "name": "Oracle WebLogic",
+                      "aliases": [
+                        "Oracle WebLogic Server"
+                      ]
+                    },
+                    {
+                      "name": "PHP",
+                      "aliases": [
+                        "Hypertext Preprocessor | Personal Home Page"
+                      ]
+                    },
+                    {
+                      "name": "WildFly",
+                      "aliases": [
+                        "Jboss"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "computer science",
+              "aliases": [
+                "informatics | informatics studies"
+              ]
+            },
+            {
+              "name": "decentralized application frameworks",
+              "aliases": [
+                "decentralized applications on blockchain infrastructure | decentralized software characteristics | decentralized software frameworks"
+              ]
+            },
+            {
+              "name": "DevOps",
+              "aliases": [
+                "DevOps development | DevOps based software development | DevOps methodology",
+                "devops engineer"
+              ]
+            },
+            {
+              "name": "digital twin technology",
+              "aliases": [
+                "digital modelling technology | virtual twin model | digital replication technology"
+              ]
+            },
+            {
+              "name": "Drupal",
+              "aliases": [
+                "Drupal web platform | Drupal CMS | Drupal content management system"
+              ]
+            },
+            {
+              "name": "e-learning software infrastructure",
+              "aliases": [
+                "e-learning software infrastracture and applications"
+              ]
+            },
+            {
+              "name": "Erlang",
+              "aliases": [
+                "Erlang programming language"
+              ]
+            },
+            {
+              "name": "firmware",
+              "aliases": [
+                "types of firmware | firmware program | read-only software | typology of firmware | built-in software | kinds of firmware"
+              ]
+            },
+            {
+              "name": "Groovy",
+              "aliases": [
+                "Groovy software techniques | Groovy programming language | Groorvy software development"
+              ]
+            },
+            {
+              "name": "Hadoop",
+              "aliases": [
+                "Apache Hadoop"
+              ]
+            },
+            {
+              "name": "hardware components",
+              "aliases": [
+                "parts for hardware systems | hardware system components | hardware system parts | components of hardware systems | types of hardware components | typology of hardware components | range of hardware components | components for hardware systems | components of hardware"
+              ]
+            },
+            {
+              "name": "hardware industry",
+              "aliases": [
+                "hardware manufacture | the hardware industry | hardware trader | hardware industries | hardware business | hardware company"
+              ]
+            },
+            {
+              "name": "hardware materials",
+              "aliases": [
+                "hardware features"
+              ]
+            },
+            {
+              "name": "hardware platforms",
+              "aliases": [
+                "hardware configuration characteristics | hardware configuration requirements"
+              ]
+            },
+            {
+              "name": "hardware testing methods",
+              "aliases": [
+                "ORT | testing methods for hardware | computer hardware testing methods | in-circuit test | testing methods for computer hardware | ongoing reliability test"
+              ]
+            },
+            {
+              "name": "Haskell",
+              "aliases": [
+                "Haskell techniques"
+              ]
+            },
+            {
+              "name": "hybrid control systems",
+              "aliases": [
+                "types of hybrid control systems | typology of hybrid control systems | kinds of hybrid control systems"
+              ]
+            },
+            {
+              "name": "IBM WebSphere",
+              "aliases": [
+                "WebSphere application server"
+              ]
+            },
+            {
+              "name": "ICT architectural frameworks",
+              "aliases": [
+                "ICT architectural structure | ICT architectural requirements | ICT architectural framework"
+              ]
+            },
+            {
+              "name": "ICT debugging tools",
+              "aliases": [
+                "software debugging tools | ICT testing tools"
+              ]
+            },
+            {
+              "name": "ICT performance analysis methods",
+              "aliases": [
+                "performance analysis techniques"
+              ]
+            },
+            {
+              "name": "ICT process quality models",
+              "aliases": [
+                "Quality maturity models | CMMI (Capability Maturity Model Integrated) | software process quality | CMM"
+              ]
+            },
+            {
+              "name": "ICT recovery techniques",
+              "aliases": [
+                "ICT recovery techniques for corrupted software components | ICT recovery techniques for hardware | ICT recovery techniques for corrupted data | ICT recovery methods | ICT recovery techniques for damaged and corrupted software components"
+              ]
+            },
+            {
+              "name": "ICT software specifications",
+              "aliases": [
+                "ICT system specifications | specify use of ICT software | ICT software specification | ICT programme specifications | ICT application specifications | ICT software specifying"
+              ],
+              "children": [
+                {
+                  "name": "graphics editor software",
+                  "aliases": [
+                    "Autodesk SketchBook Pro | Adobe Photoshop Elements | CinePaint | NeoPaint | Project Dogwaffle | sK1 | Apache OpenOffice Draw | RawTherapee | PixBuilder Photo Editor | cosmigo Pro Motion | OmniGraffle | PhotoScape | SVG-edit | Corel Painter Essentials | Swift 3D | UFRaw | ArtRage | GimPhoto | Picasa | ArcSoft PhotoImpression | Fatpaint | vector graphics editor | Pictor Paint | Pixlr.com | QFX | Zoner Photo Studio | GIMPshop | DigiKam | TVPaint | Paint.NET | XnView | Darktable | CodedColor | IrfanView | LightZone | Photogenics | LibreOffice Draw | Ability Photopaint | Embroidermodder | Serif Photoplus | PicMonkey | Phatch | ImageMagick | Chasys Draw IES | ACD Canvas | Inkscape | Color It! | Unified Color HDR PhotoStudio | XPaint | GrafX2 | LView Pro | Xara Xtreme LX | Erdas Imagine | Balsamiq | Macromedia FreeHand | G'MIC | Shotwell | Tux Paint | GraphicConverter | Xara Photo & Graphic Designer | Corel Photo-Paint | Sodipodi | Pixelmator | F-Spot | GraphicsMagick | SAI | Photo Mechanic | LazPaint | Ulead PhotoImpact | Pixia | Fotografix | PMview | FastStone Image Viewer | Rawstudio | KolourPaint | Serif DrawPlus | PhotoPerfect | Iridient Developer"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ICT system programming",
+              "aliases": [
+                "network programming | server side programming"
+              ]
+            },
+            {
+              "name": "ICT system user requirements",
+              "aliases": [
+                "analysis of user requirement in ICT systems | analysis of user requirements in ICT systems"
+              ]
+            },
+            {
+              "name": "incremental development",
+              "aliases": [
+                "gradual development"
+              ]
+            },
+            {
+              "name": "internet governance",
+              "aliases": [
+                "internet regulation | internet governance policies"
+              ]
+            },
+            {
+              "name": "iOS",
+              "aliases": [
+                "IPhoneOS | IPhone os | IOS (operating system) | IPadOS | IPhone OS | iPhone OS"
+              ],
+              "children": [
+                {
+                  "name": "Objective-C",
+                  "aliases": [
+                    "Objective C"
+                  ]
+                },
+                {
+                  "name": "Swift"
+                }
+              ]
+            },
+            {
+              "name": "iterative development",
+              "aliases": [
+                "iterative development methodology"
+              ]
+            },
+            {
+              "name": "Java (computer programming)",
+              "aliases": [
+                "Java 2 | Java 2 enterprise edition | Java"
+              ]
+            },
+            {
+              "name": "JavaScript",
+              "aliases": [
+                "Client-side JavaScript | Live Script | Escript | CSJS | Mocha | Server-side JavaScript",
+                "js",
+                "ecmascript"
+              ]
+            },
+            {
+              "name": "Jenkins (tools for software configuration management)",
+              "aliases": [
+                "Jenkins Continuous Integration server | Jenkins | Jenkins CI"
+              ]
+            },
+            {
+              "name": "John The Ripper (penetration testing tool)",
+              "aliases": [
+                "John The Ripper"
+              ]
+            },
+            {
+              "name": "Joomla",
+              "aliases": [
+                "Joomla software"
+              ]
+            },
+            {
+              "name": "Kali Linux",
+              "aliases": [
+                "Kali Tools | Kali Docs | Kali NetHunter | Kali penetration testing tool | Kali Linux distribution"
+              ]
+            },
+            {
+              "name": "LDAP",
+              "aliases": [
+                "Lightweight Directory Access Protocol"
+              ]
+            },
+            {
+              "name": "levels of software testing",
+              "aliases": [
+                "software integration testing"
+              ]
+            },
+            {
+              "name": "LINQ",
+              "aliases": [
+                "Language Integrated Query"
+              ]
+            },
+            {
+              "name": "Lisp",
+              "aliases": [
+                "Lisp software development principles | Lisp algorithms | Lisp software development techniques | Lisp programming paradigms | Lisp coding techniques"
+              ]
+            },
+            {
+              "name": "machine translation",
+              "aliases": [
+                "computer-assisted translation | automatic translation | machine translating | CAT tranlsation"
+              ]
+            },
+            {
+              "name": "Maltego",
+              "aliases": [
+                "Maltego digital Forensics tool | Maltego cybersecurity tool | Maltego Forensics"
+              ]
+            },
+            {
+              "name": "MATLAB",
+              "aliases": [
+                "MATLAB software development principles | MATLAB coding techniques | MATLAB algorithms | MATLAB software development techniques | MATLAB programming paradigms"
+              ]
+            },
+            {
+              "name": "MDX",
+              "aliases": [
+                "MultiDimensional eXpressions"
+              ]
+            },
+            {
+              "name": "Metasploit",
+              "aliases": [
+                "Metasploit penetration testing tool"
+              ]
+            },
+            {
+              "name": "ML (computer programming)",
+              "aliases": [
+                "ML | ML systems | ML development principles"
+              ]
+            },
+            {
+              "name": "mobile device software frameworks",
+              "aliases": [
+                "mobile phone software frameworks | android software frameworks | windows phone software frameworks | iOS software frameworks | cell phone device software frameworks"
+              ]
+            },
+            {
+              "name": "mobile operating systems",
+              "aliases": [
+                "Firefox OS | Sailfish OS | Ubuntu Touch OS | Tizen | cell phone operating systems"
+              ],
+              "children": [
+                {
+                  "name": "Android (mobile operating systems)"
+                },
+                {
+                  "name": "BlackBerry",
+                  "aliases": [
+                    "BlackBerry System"
+                  ]
+                },
+                {
+                  "name": "iOS",
+                  "aliases": [
+                    "IPhoneOS | IPhone os | IOS (operating system) | IPadOS | IPhone OS | iPhone OS"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "N1QL",
+              "aliases": [
+                "Couchbase Query Language | Non-first Normal Form Query Language"
+              ]
+            },
+            {
+              "name": "Nessus",
+              "aliases": [
+                "Nessus Vulnerability Scanner"
+              ]
+            },
+            {
+              "name": "Nexpose",
+              "aliases": [
+                "Rapid7 Nexpose"
+              ]
+            },
+            {
+              "name": "object-oriented modelling",
+              "aliases": [
+                "object-oriented paradigm | object-oriented modeling | knowledge of object-oriented modelling"
+              ]
+            },
+            {
+              "name": "Objective-C",
+              "aliases": [
+                "Objective C"
+              ]
+            },
+            {
+              "name": "Octopus Deploy",
+              "aliases": [
+                "Octopus Deploy software program"
+              ]
+            },
+            {
+              "name": "OmniPage",
+              "aliases": [
+                "OmniPage OCR program for scanned documents | OmniPage software for images conversion | OmniPage OCR software | OmniPage computer program for printed images conversion | OmniPage software | OmniPage computer program | OmniPage for text recognition from images"
+              ]
+            },
+            {
+              "name": "OpenEdge Advanced Business Language",
+              "aliases": [
+                "OpenEdge Advanced Business Language techniques"
+              ]
+            },
+            {
+              "name": "operating systems",
+              "aliases": [
+                "OS architecture | AS400 | WIN/NT | Novell | VMS"
+              ],
+              "children": [
+                {
+                  "name": "mobile operating systems",
+                  "aliases": [
+                    "Firefox OS | Sailfish OS | Ubuntu Touch OS | Tizen | cell phone operating systems"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "optical character recognition software",
+              "aliases": [
+                "OCRopus | (a9t9) FreeOCR | Puma.NET | SimpleOCR | LEADTOOLS | ReadSoft | OCR | Ocrad | MeOCR | ExperVision TypeReader & RTK | Dynamsoft OCR SDK | Scantron | Asprise OCRSDK | FreeOCR | CuneiForm | Microsoft Office Document Imaging | AnyDoc Software | Microsoft Office OneNote 2007 | GOCR | Tesseract | SmartScore | MathOCR | Nicomsoft OCR SDK | OCRFeeder"
+              ],
+              "children": [
+                {
+                  "name": "ABBYY FineReader",
+                  "aliases": [
+                    "ABBYY FineReader PDF software | OCR software"
+                  ]
+                },
+                {
+                  "name": "OmniPage",
+                  "aliases": [
+                    "OmniPage OCR program for scanned documents | OmniPage software for images conversion | OmniPage OCR software | OmniPage computer program for printed images conversion | OmniPage software | OmniPage computer program | OmniPage for text recognition from images"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Oracle Application Development Framework",
+              "aliases": [
+                "Oracle ADF"
+              ]
+            },
+            {
+              "name": "Oracle WebLogic",
+              "aliases": [
+                "Oracle WebLogic Server"
+              ]
+            },
+            {
+              "name": "OWASP ZAP",
+              "aliases": [
+                "OWASP Zed | OWASP Zed Attack Proxy"
+              ]
+            },
+            {
+              "name": "Parrot Security OS",
+              "aliases": [
+                "OS - Parrot Security"
+              ]
+            },
+            {
+              "name": "Pascal (computer programming)",
+              "aliases": [
+                "Pascal"
+              ]
+            },
+            {
+              "name": "penetration testing tool",
+              "aliases": [
+                "I.C.U.MVS | COPS | CA-Examine | IP360 Vulnerability Management System | S10SCAN | metasploit | PanSec | Quickinspector | Nfsbug | NTellect | Pmutil | Chkpwd | GamaScan | SFProtect Mobile | Hobgoblin | VAM | SAM System Scanner | Trojan | Cisco Secure Scanner | Burpsuite | SFProtect Server | HackerShield | penetration testing software | SAM Internet Scanner | NMAP | output of a penetration test | PhoneSweep | NTCrack | webinspect"
+              ],
+              "children": [
+                {
+                  "name": "Aircrack (penetration testing tool)",
+                  "aliases": [
+                    "Aircrack"
+                  ]
+                },
+                {
+                  "name": "Backbox (penetration testing tool)",
+                  "aliases": [
+                    "Backbox"
+                  ]
+                },
+                {
+                  "name": "BlackArch",
+                  "aliases": [
+                    "BlackArch testing tool"
+                  ]
+                },
+                {
+                  "name": "Cain and Abel (penetration testing tool)",
+                  "aliases": [
+                    "Cain and Abel penetration testing software | Cain and Abel password recovery tool | Cain and Abel | Cain and Abel software for penetration testing | Cain and Abel penetration testing tool"
+                  ]
+                },
+                {
+                  "name": "John The Ripper (penetration testing tool)",
+                  "aliases": [
+                    "John The Ripper"
+                  ]
+                },
+                {
+                  "name": "Kali Linux",
+                  "aliases": [
+                    "Kali Tools | Kali Docs | Kali NetHunter | Kali penetration testing tool | Kali Linux distribution"
+                  ]
+                },
+                {
+                  "name": "Maltego",
+                  "aliases": [
+                    "Maltego digital Forensics tool | Maltego cybersecurity tool | Maltego Forensics"
+                  ]
+                },
+                {
+                  "name": "Metasploit",
+                  "aliases": [
+                    "Metasploit penetration testing tool"
+                  ]
+                },
+                {
+                  "name": "Nessus",
+                  "aliases": [
+                    "Nessus Vulnerability Scanner"
+                  ]
+                },
+                {
+                  "name": "Nexpose",
+                  "aliases": [
+                    "Rapid7 Nexpose"
+                  ]
+                },
+                {
+                  "name": "OWASP ZAP",
+                  "aliases": [
+                    "OWASP Zed | OWASP Zed Attack Proxy"
+                  ]
+                },
+                {
+                  "name": "Parrot Security OS",
+                  "aliases": [
+                    "OS - Parrot Security"
+                  ]
+                },
+                {
+                  "name": "Samurai Web Testing Framework",
+                  "aliases": [
+                    "OWASP Samurai WTF | SamuraiWTF"
+                  ]
+                },
+                {
+                  "name": "THC Hydra",
+                  "aliases": [
+                    "Hydra | Hydra parallelized network login tool"
+                  ]
+                },
+                {
+                  "name": "WhiteHat Sentinel",
+                  "aliases": [
+                    "WhiteHat Sentinel Standard Edition | WhiteHat Sentinel Baseline Edition | WhiteHat Sentinel Premium Edition"
+                  ]
+                },
+                {
+                  "name": "Wireshark",
+                  "aliases": [
+                    "Wireshark tool"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Perl",
+              "aliases": [
+                "Practical Extraction and Report Language | PONIE"
+              ]
+            },
+            {
+              "name": "PHP",
+              "aliases": [
+                "Hypertext Preprocessor | Personal Home Page"
+              ]
+            },
+            {
+              "name": "Prolog (computer programming)",
+              "aliases": [
+                "Prolog"
+              ]
+            },
+            {
+              "name": "Prototyping development",
+              "aliases": [
+                "prototyping methodology"
+              ]
+            },
+            {
+              "name": "Puppet (tools for software configuration management)",
+              "aliases": [
+                "Puppet"
+              ]
+            },
+            {
+              "name": "Python (computer programming)",
+              "aliases": [
+                "Python 3K | Python"
+              ]
+            },
+            {
+              "name": "query languages",
+              "aliases": [
+                "DMX | SuprTool | OttoQL | XPath | QUEL | ISBL | .QL | F-logic | SPL | FQL | OPath | MQL | Poliqarp | HTSQL | YQL | Gellish | XSPARQL | Concept-Oriented | TMQL | RDQL | OCL | OQL | CQLF | ReQL | Datalog"
+              ],
+              "children": [
+                {
+                  "name": "LDAP",
+                  "aliases": [
+                    "Lightweight Directory Access Protocol"
+                  ]
+                },
+                {
+                  "name": "LINQ",
+                  "aliases": [
+                    "Language Integrated Query"
+                  ]
+                },
+                {
+                  "name": "MDX",
+                  "aliases": [
+                    "MultiDimensional eXpressions"
+                  ]
+                },
+                {
+                  "name": "N1QL",
+                  "aliases": [
+                    "Couchbase Query Language | Non-first Normal Form Query Language"
+                  ]
+                },
+                {
+                  "name": "resource description framework query language",
+                  "aliases": [
+                    "RDF query language | SPARQL"
+                  ],
+                  "children": [
+                    {
+                      "name": "LINQ",
+                      "aliases": [
+                        "Language Integrated Query"
+                      ]
+                    },
+                    {
+                      "name": "N1QL",
+                      "aliases": [
+                        "Couchbase Query Language | Non-first Normal Form Query Language"
+                      ]
+                    },
+                    {
+                      "name": "SPARQL",
+                      "aliases": [
+                        "SPARQL Protocol and RDF Query Language"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "SPARQL",
+                  "aliases": [
+                    "SPARQL Protocol and RDF Query Language"
+                  ]
+                },
+                {
+                  "name": "SQL",
+                  "aliases": [
+                    "Informix 4GL/SQL | Subquery | SEQUEL"
+                  ]
+                },
+                {
+                  "name": "XQuery",
+                  "aliases": [
+                    "XQuery language"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "R",
+              "aliases": [
+                "R software"
+              ]
+            },
+            {
+              "name": "Rapid application development",
+              "aliases": [
+                "Rapid application development model | Rapid application development methodology"
+              ]
+            },
+            {
+              "name": "resource description framework query language",
+              "aliases": [
+                "RDF query language | SPARQL"
+              ]
+            },
+            {
+              "name": "Ruby (computer programming)"
+            },
+            {
+              "name": "Salt (tools for software configuration management)",
+              "aliases": [
+                "Salt"
+              ]
+            },
+            {
+              "name": "Samurai Web Testing Framework",
+              "aliases": [
+                "OWASP Samurai WTF | SamuraiWTF"
+              ]
+            },
+            {
+              "name": "SAP R3",
+              "aliases": [
+                "SAP R/3 | SAP R/3 Enterprise Edition | SAP S/4 HANA | SAP R/1 | SAP ERP | SAP R/2 | SAP R/3 Enterprise Central Component | SAP ERP 6.0: Enhancement Packages"
+              ]
+            },
+            {
+              "name": "SAS language",
+              "aliases": [
+                "SAS coding | SAS algorithms | SAS testing | SAS algorithm | SAS programming language | SAS principles for software development | SAS techniques for software development"
+              ]
+            },
+            {
+              "name": "Scala",
+              "aliases": [
+                "Scala Programming Language"
+              ]
+            },
+            {
+              "name": "Scratch (computer programming)",
+              "aliases": [
+                "Scratch"
+              ]
+            },
+            {
+              "name": "Smalltalk (computer programming)",
+              "aliases": [
+                "Smalltalk programming system | Smalltalk"
+              ]
+            },
+            {
+              "name": "Smart Contract",
+              "aliases": [
+                "smart contract software",
+                "smart contracts"
+              ]
+            },
+            {
+              "name": "smart contract programming languages",
+              "aliases": [
+                "programming languages for smart contract"
+              ]
+            },
+            {
+              "name": "software anomalies",
+              "aliases": [
+                "software performance incidents | software behaviour deviations | software performance deviations | software bugs | software defects"
+              ]
+            },
+            {
+              "name": "software components libraries"
+            },
+            {
+              "name": "software components suppliers",
+              "aliases": [
+                "suppliers of software components"
+              ]
+            },
+            {
+              "name": "software design methodologies",
+              "aliases": [
+                "software design approaches | software design techniques"
+              ],
+              "children": [
+                {
+                  "name": "software UI design patterns",
+                  "aliases": [
+                    "software user interface design patterns | solutions for software user interface tasks | best practices for software user interface tasks | solutions for software UI tasks | software UI design best practices"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "software frameworks",
+              "aliases": [
+                "software engineering frameworks"
+              ],
+              "children": [
+                {
+                  "name": "Ajax Framework",
+                  "aliases": [
+                    "Ajax Framework features | Ajax Framework features for web applications development | Ajax framework for web applications development | Ajax Framework components | AJAX Development Environments | AJAX Framework for Web Application Development | Ajax framework features for web applications development | Ajax software development environments | Ajax framework components | Ajax framework features | AJAX Framework Features for Web Development | Ajax Framework for web applications development"
+                  ]
+                },
+                {
+                  "name": "Hadoop",
+                  "aliases": [
+                    "Apache Hadoop"
+                  ]
+                },
+                {
+                  "name": "JavaScript Framework"
+                },
+                {
+                  "name": "Oracle Application Development Framework",
+                  "aliases": [
+                    "Oracle ADF"
+                  ]
+                },
+                {
+                  "name": "Spark",
+                  "aliases": [
+                    "apache spark"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "software metrics",
+              "aliases": [
+                "software measurement metrics"
+              ]
+            },
+            {
+              "name": "software UI design patterns",
+              "aliases": [
+                "software user interface design patterns | solutions for software user interface tasks | best practices for software user interface tasks | solutions for software UI tasks | software UI design best practices"
+              ]
+            },
+            {
+              "name": "Solidity",
+              "aliases": [
+                "Solidity principles | Solidity techniques | Solidity software"
+              ]
+            },
+            {
+              "name": "Spark",
+              "aliases": [
+                "apache spark"
+              ]
+            },
+            {
+              "name": "SPARQL",
+              "aliases": [
+                "SPARQL Protocol and RDF Query Language"
+              ]
+            },
+            {
+              "name": "Spiral development",
+              "aliases": [
+                "Spiral development methodology"
+              ]
+            },
+            {
+              "name": "SQL",
+              "aliases": [
+                "Informix 4GL/SQL | Subquery | SEQUEL"
+              ]
+            },
+            {
+              "name": "STAF",
+              "aliases": [
+                "STAF software"
+              ]
+            },
+            {
+              "name": "Swift (computer programming)",
+              "aliases": [
+                "Swift programming paradigms | Swift software development techniques | Swift software development principles | Swift | Swift algorithms"
+              ]
+            },
+            {
+              "name": "system design",
+              "aliases": [
+                "system architecture design"
+              ]
+            },
+            {
+              "name": "systems development life-cycle",
+              "aliases": [
+                "application development life-cycle"
+              ]
+            },
+            {
+              "name": "systems theory",
+              "aliases": [
+                "systems fundamentals"
+              ]
+            },
+            {
+              "name": "systems thinking",
+              "aliases": [
+                "systems thought | integrated thinking | system thinking | integration of thinking | integrate thinking"
+              ]
+            },
+            {
+              "name": "THC Hydra",
+              "aliases": [
+                "Hydra | Hydra parallelized network login tool"
+              ]
+            },
+            {
+              "name": "tools for ICT test automation",
+              "aliases": [
+                "test automation tools | Selenium | tools for test automation"
+              ]
+            },
+            {
+              "name": "tools for software configuration management",
+              "aliases": [
+                "tools for software version control | Rudder | NOC | OCS Inventory NG with GLPI | Bcfg2 | Rundeck | Synctool | SmartFrog | CFEngine | Local ConFiGuration system | source control | Radmind | cdist | Quattor | ISconf | revision control | NixOS | git | PIKT | software tools for version control | Open pc server integration"
+              ],
+              "children": [
+                {
+                  "name": "Ansible",
+                  "aliases": [
+                    "Ansible automation tool"
+                  ]
+                },
+                {
+                  "name": "Apache Maven",
+                  "aliases": [
+                    "Maven"
+                  ]
+                },
+                {
+                  "name": "Chef (tools for software configuration management)",
+                  "aliases": [
+                    "Chef software"
+                  ]
+                },
+                {
+                  "name": "Codenvy",
+                  "aliases": [
+                    "Codenvy platform | Codenvy tool"
+                  ]
+                },
+                {
+                  "name": "Jenkins (tools for software configuration management)",
+                  "aliases": [
+                    "Jenkins Continuous Integration server | Jenkins | Jenkins CI"
+                  ]
+                },
+                {
+                  "name": "Octopus Deploy",
+                  "aliases": [
+                    "Octopus Deploy software program"
+                  ]
+                },
+                {
+                  "name": "Puppet (tools for software configuration management)",
+                  "aliases": [
+                    "Puppet"
+                  ]
+                },
+                {
+                  "name": "Salt (tools for software configuration management)",
+                  "aliases": [
+                    "Salt"
+                  ]
+                },
+                {
+                  "name": "STAF",
+                  "aliases": [
+                    "STAF software"
+                  ]
+                },
+                {
+                  "name": "Vagrant",
+                  "aliases": [
+                    "Vagrant tool | Vagrant software"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TypeScript",
+              "aliases": [
+                "TypeScript programming language"
+              ]
+            },
+            {
+              "name": "Vagrant",
+              "aliases": [
+                "Vagrant tool | Vagrant software"
+              ]
+            },
+            {
+              "name": "VBScript",
+              "aliases": [
+                "VBScript for web-based scripting | VBScript programming paradigms | VBScript coding techniques | VBScript scripting techniques | VBScript algorithms"
+              ]
+            },
+            {
+              "name": "Visual Basic",
+              "aliases": [
+                "VB.NET | .NET | Visual Studio .NET | Visual Studio | VB"
+              ]
+            },
+            {
+              "name": "Vyper",
+              "aliases": [
+                "Vyper software"
+              ]
+            },
+            {
+              "name": "Waterfall development",
+              "aliases": [
+                "Waterfall project management | Waterfall software development"
+              ]
+            },
+            {
+              "name": "web programming",
+              "aliases": [
+                "markup programming"
+              ]
+            },
+            {
+              "name": "web services",
+              "aliases": [
+                "web services systems"
+              ]
+            },
+            {
+              "name": "WebCMS",
+              "aliases": [
+                "WebCMS software systems"
+              ],
+              "children": [
+                {
+                  "name": "Drupal",
+                  "aliases": [
+                    "Drupal web platform | Drupal CMS | Drupal content management system"
+                  ]
+                },
+                {
+                  "name": "Joomla",
+                  "aliases": [
+                    "Joomla software"
+                  ]
+                },
+                {
+                  "name": "WordPress",
+                  "aliases": [
+                    "WordPress CMS"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "WhiteHat Sentinel",
+              "aliases": [
+                "WhiteHat Sentinel Standard Edition | WhiteHat Sentinel Baseline Edition | WhiteHat Sentinel Premium Edition"
+              ]
+            },
+            {
+              "name": "WildFly",
+              "aliases": [
+                "Jboss"
+              ]
+            },
+            {
+              "name": "Wireshark",
+              "aliases": [
+                "Wireshark tool"
+              ]
+            },
+            {
+              "name": "WordPress",
+              "aliases": [
+                "WordPress CMS"
+              ]
+            },
+            {
+              "name": "World Wide Web Consortium standards",
+              "aliases": [
+                "W3C standards"
+              ]
+            },
+            {
+              "name": "XQuery",
+              "aliases": [
+                "XQuery language"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Management",
+      "children": [
+        {
+          "name": "Business Analyst",
+          "aliases": [
+            "business analysis"
+          ]
+        },
+        {
+          "name": "Product Manager",
+          "aliases": [
+            "product management"
+          ]
+        },
+        {
+          "name": "Product Owner"
+        },
+        {
+          "name": "Project Manager",
+          "aliases": [
+            "project management"
+          ]
+        },
+        {
+          "name": "Scrum Master",
+          "aliases": [
+            "scrum"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "QA",
+      "aliases": [
+        "quality assurance",
+        "tester"
+      ],
+      "children": [
+        {
+          "name": "Manual Testing"
+        },
+        {
+          "name": "QA Automation",
+          "aliases": [
+            "test automation",
+            "automation tester"
+          ],
+          "children": [
+            {
+              "name": "Appium"
+            },
+            {
+              "name": "Cypress"
+            },
+            {
+              "name": "Playwright"
+            },
+            {
+              "name": "Selenium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "aliases": [
+        "cybersecurity",
+        "information security"
+      ],
+      "children": [
+        {
+          "name": "Penetration Testing",
+          "aliases": [
+            "pentest"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Software Development",
+      "aliases": [
+        "software engineering",
+        "developer",
+        "programming",
+        "software engineer",
+        "software developer"
+      ],
+      "children": [
+        {
+          "name": "Backend",
+          "aliases": [
+            "back-end",
+            "backend developer",
+            "server-side"
+          ],
+          "children": [
+            {
+              "name": ".NET",
+              "aliases": [
+                "dotnet",
+                "dot net",
+                "csharp"
+              ],
+              "children": [
+                {
+                  "name": "ASP.NET Core"
+                },
+                {
+                  "name": "Entity Framework"
+                }
+              ]
+            },
+            {
+              "name": "C"
+            },
+            {
+              "name": "C++",
+              "aliases": [
+                "C++ software | C++ framework",
+                "cpp"
+              ]
+            },
+            {
+              "name": "Golang",
+              "aliases": [
+                "go lang"
+              ]
+            },
+            {
+              "name": "Java",
+              "aliases": [
+                "java developer"
+              ],
+              "children": [
+                {
+                  "name": "Hibernate"
+                },
+                {
+                  "name": "Spring",
+                  "aliases": [
+                    "spring boot"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Node.js",
+              "aliases": [
+                "nodejs",
+                "node js"
+              ],
+              "children": [
+                {
+                  "name": "Express"
+                },
+                {
+                  "name": "NestJS"
+                }
+              ]
+            },
+            {
+              "name": "PHP",
+              "aliases": [
+                "Hypertext Preprocessor | Personal Home Page"
+              ]
+            },
+            {
+              "name": "Python",
+              "aliases": [
+                "python developer"
+              ],
+              "children": [
+                {
+                  "name": "Django"
+                },
+                {
+                  "name": "FastAPI"
+                },
+                {
+                  "name": "Flask"
+                }
+              ]
+            },
+            {
+              "name": "Ruby",
+              "aliases": [
+                "ruby on rails",
+                "rails"
+              ]
+            },
+            {
+              "name": "Rust"
+            },
+            {
+              "name": "Scala",
+              "aliases": [
+                "Scala Programming Language"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Frontend",
+          "aliases": [
+            "front-end",
+            "frontend developer"
+          ],
+          "children": [
+            {
+              "name": "CSS",
+              "aliases": [
+                "Cascading Style Sheets",
+                "css3"
+              ]
+            },
+            {
+              "name": "HTML",
+              "aliases": [
+                "html5"
+              ]
+            },
+            {
+              "name": "JavaScript",
+              "aliases": [
+                "Client-side JavaScript | Live Script | Escript | CSJS | Mocha | Server-side JavaScript",
+                "js",
+                "ecmascript"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fullstack",
+          "aliases": [
+            "full stack",
+            "full-stack",
+            "fullstack developer",
+            "full stack developer"
+          ]
+        },
+        {
+          "name": "Game Development",
+          "aliases": [
+            "gamedev",
+            "game developer"
+          ],
+          "children": [
+            {
+              "name": "Unity",
+              "aliases": [
+                "unity3d"
+              ]
+            },
+            {
+              "name": "Unreal Engine",
+              "aliases": [
+                "unreal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mobile",
+          "aliases": [
+            "mobile development",
+            "mobile developer"
+          ],
+          "children": [
+            {
+              "name": "Android",
+              "children": [
+                {
+                  "name": "Kotlin"
+                }
+              ]
+            },
+            {
+              "name": "Flutter",
+              "children": [
+                {
+                  "name": "Dart"
+                }
+              ]
+            },
+            {
+              "name": "iOS",
+              "aliases": [
+                "IPhoneOS | IPhone os | IOS (operating system) | IPadOS | IPhone OS | iPhone OS"
+              ]
+            },
+            {
+              "name": "React Native"
+            },
+            {
+              "name": "Xamarin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sysadmin",
+      "aliases": [
+        "system administrator",
+        "systems administrator"
+      ],
+      "children": [
+        {
+          "name": "Linux"
+        },
+        {
+          "name": "Networking",
+          "aliases": [
+            "network engineer"
+          ]
+        },
+        {
+          "name": "Windows Server"
+        }
+      ]
+    }
+  ]
+}
