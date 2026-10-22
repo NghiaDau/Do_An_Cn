@@ -13,7 +13,7 @@ project_dacn/
 │   │   ├── core/embedding.py  # cấu hình model embedding
 │   │   ├── core/taxonomy.py   # đồ thị taxonomy IT (NetworkX) + hàm Graph Matching
 │   │   ├── data/taxonomy.json # taxonomy ngành IT phân cấp (chung -> cụ thể)
-│   │   └── routers/           # health.py, jobs.py
+│   │   └── routers/           # health.py, jobs.py, cv.py
 │   ├── scripts/make_csv.py    # đổi file parquet đã tải về thành job_descriptions.csv
 │   ├── scripts/embed_jd.py    # đọc CSV, embed Long Description, nạp vào ChromaDB
 │   ├── data_set/job_descriptions/ # parquet tải về + job_descriptions.csv (không đưa lên git)
@@ -93,6 +93,24 @@ python run.py
 - `GET /jobs/{job_id}`: chi tiết một JD
 
 Model embedding được nạp khi server khởi động (trước dòng `Application startup complete`) để embed câu truy vấn của `/jobs/search`.
+
+### Phân tích CV (PDF -> CandidateProfile)
+
+`POST /cv/parse` nhận file PDF (form-data, trường `file`, tối đa 10MB), đọc text bằng PyMuPDF rồi gọi LLM (Groq hoặc Gemini Flash) **một lần** để trả về `CandidateProfile`. LLM bị ép chuẩn hóa theo đúng định dạng metadata của JD, nên kết quả đưa thẳng vào bộ lọc của `/jobs/search` được:
+
+| Trường | Chuẩn hóa | Ví dụ |
+|---|---|---|
+| `exp_years` | số nguyên năm, làm tròn xuống | "24 months" -> `2`, "1.5 years" -> `1` |
+| `english_level` | `basic` / `pre` / `intermediate` / `upper` / `fluent` (hoặc `null` nếu CV không nêu) | "IELTS 6.0" -> `intermediate` |
+| `english_level_num` | tự suy ra bằng code từ `english_level` (1-5, `0` nếu không có) | `intermediate` -> `3` |
+| `keyword` | một trong các Primary Keyword của JD | `Python`, `Java`, `Other`... |
+| `position`, `skills`, `summary` | tiếng Anh; `summary` dùng làm câu truy vấn `q` | |
+
+Cấu hình: sao chép `back_end/.env.example` thành `back_end/.env` rồi điền `GROQ_API_KEY` (lấy tại console.groq.com/keys) hoặc `GEMINI_API_KEY` (file `.env` không đưa lên git). Chọn nhà cung cấp bằng `LLM_PROVIDER=groq|gemini`; bỏ trống thì dùng Groq nếu có `GROQ_API_KEY`, ngược lại dùng Gemini. Đổi model bằng `GROQ_MODEL` (mặc định `openai/gpt-oss-120b`) hoặc `GEMINI_MODEL` (mặc định `gemini-2.5-flash`). Sau khi sửa `.env` phải khởi động lại server, vì `--reload` không theo dõi file `.env`.
+
+Mã lỗi: `422` file không phải PDF hoặc PDF không có text (bản scan), `413` quá 10MB, `503` chưa đặt API key, `502` lỗi khi gọi LLM.
+
+Code: `app/core/cv_pdf.py` (đọc PDF), `app/core/cv_profile.py` (schema `CandidateProfile`, prompt và lời gọi Gemini), `app/routers/cv.py` (endpoint).
 
 ### Taxonomy kỹ năng (Graph Matching)
 

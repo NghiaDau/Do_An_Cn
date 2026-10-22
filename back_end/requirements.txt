@@ -9,3 +9,6 @@ tqdm
 einops
 pyarrow
 pytest
+pymupdf
+google-genai
+python-multipart
