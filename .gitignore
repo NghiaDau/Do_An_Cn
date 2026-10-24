@@ -4,3 +4,28 @@ __pycache__/
 .env
 data_set/
 chroma_db/
+
+# Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Env (giữ lại file mẫu)
+.env.*
+!.env.example
+
+# Front end
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code (cấu hình cá nhân)
+.claude/settings.local.json
