@@ -19,6 +19,7 @@ project_dacn/
 │   ├── data_set/job_descriptions/ # parquet tải về + job_descriptions.csv (không đưa lên git)
 │   ├── chroma_db/             # dữ liệu vector (tự sinh, không đưa lên git)
 │   └── requirements.txt
+└── front_end/                 # giao diện React (Vite), xem mục 5
 ```
 
 ## Yêu cầu
@@ -85,8 +86,8 @@ python run.py
 
 - Swagger UI: http://localhost:8000/docs
 - `GET /health`: kiểm tra server và kết nối ChromaDB, trả số JD hiện có (`total_jobs`); lỗi kết nối trả 503
-- `GET /jobs?limit=10&offset=0&keyword=Python`: danh sách JD (trả đủ `description`)
-- `GET /jobs/search?q=backend python developer&limit=10`: tìm JD theo ngữ nghĩa (vector), có `score` (cosine, càng gần 1 càng giống). Kết hợp thêm bộ lọc metadata (hybrid search):
+- `GET /jobs?page=1&page_size=10&keyword=Python`: danh sách JD phân trang (trả đủ `description`, kèm `total`, `total_pages`)
+- `GET /jobs/search?q=backend python developer&page=1&page_size=10`: tìm JD theo ngữ nghĩa (vector), có `score` (cosine, càng gần 1 càng giống). Kết hợp thêm bộ lọc metadata (hybrid search):
   - `keyword`, `company`: lọc đúng giá trị
   - `min_exp`, `max_exp`: khoảng số năm kinh nghiệm
   - `min_english`, `max_english`: khoảng mức tiếng Anh (1=basic, 2=pre, 3=intermediate, 4=upper, 5=fluent)
@@ -178,3 +179,59 @@ $env:CHROMA_HOST="localhost"
 Nếu chạy cùng FastAPI, đổi cổng Chroma để tránh trùng cổng 8000: `chroma run --path chroma_db --port 8001`, và đặt thêm `$env:CHROMA_PORT="8001"`.
 
 > Không chạy script nạp và server Chroma cùng ghi vào một thư mục `chroma_db` mà không đặt `CHROMA_HOST`, vì dễ làm hỏng dữ liệu.
+
+## 5. Giao diện web (front_end)
+
+Giao diện React (Vite) cho các API ở trên, viết bằng tiếng Việt, kiểu Linear sáng kết hợp Notion. Cần Node.js 20 trở lên.
+
+### Chạy
+
+Bật backend ở cổng 8000 trước (xem mục chạy API), rồi từ thư mục `front_end`:
+
+```bash
+npm install
+npm run dev        # http://localhost:5173
+```
+
+Khi chạy dev, mọi lời gọi `/api/*` được proxy sang `http://localhost:8000` (cấu hình trong `vite.config.js`), nên không cần bật CORS thêm. Backend ở địa chỉ khác thì đặt `VITE_PROXY_TARGET`:
+
+```powershell
+$env:VITE_PROXY_TARGET="http://localhost:8001"
+npm run dev
+```
+
+Các lệnh khác:
+
+```bash
+npm run build      # build ra front_end/dist
+npm run preview    # xem thử bản build
+npm run lint       # oxlint
+```
+
+Khi triển khai bản build, đặt `VITE_API_URL` là địa chỉ đầy đủ của API (mặc định `/api`) trước khi `npm run build`.
+
+### Các màn hình
+
+| Đường dẫn | Màn hình | API dùng |
+|---|---|---|
+| `/` | Tổng quan: ô tìm nhanh, tình trạng backend | `GET /health` |
+| `/tim-kiem` | Tìm theo ngữ nghĩa kết hợp lọc lĩnh vực, công ty, kinh nghiệm, tiếng Anh | `GET /jobs/search` |
+| `/viec-lam` | Duyệt toàn bộ JD, lọc lĩnh vực, phân trang | `GET /jobs` |
+| `/viec-lam/:id` | Chi tiết một JD | `GET /jobs/{id}` |
+| `/cv` | Tải CV PDF, xem hồ sơ trích xuất và JD gợi ý (3 bộ lọc bật/tắt) | `POST /cv/parse`, `GET /jobs/search` |
+
+Phân tích CV cần cấu hình LLM trong `back_end/.env` (`GROQ_API_KEY` hoặc `GEMINI_API_KEY`). Dữ liệu JD bằng tiếng Anh nên câu tìm kiếm cũng nên viết tiếng Anh, ví dụ `backend developer with Python and FastAPI`.
+
+### Cấu trúc
+
+```
+front_end/src/
+  api.js            gọi backend (một chỗ duy nhất)
+  App.jsx           khung ứng dụng và định tuyến
+  index.css         toàn bộ token màu, cỡ chữ, khoảng cách và style
+  pages/            Home, Search, Browse, JobDetail, Cv
+  components/       JobRow, Avatar, Icon, States (lỗi, trống, skeleton)
+  lib/              labels.js (giá trị metadata JD), useAsync.js
+```
+
+Danh sách lĩnh vực và mức tiếng Anh trong `lib/labels.js` phải khớp metadata JD trong ChromaDB (`back_end/app/core/cv_profile.py`). Đổi bên backend thì cập nhật cả hai.
